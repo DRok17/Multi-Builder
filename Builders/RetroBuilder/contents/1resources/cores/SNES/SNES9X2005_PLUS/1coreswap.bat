@@ -1,0 +1,7 @@
+copy "core.txt" ".."
+exit
+
+
+
+
+

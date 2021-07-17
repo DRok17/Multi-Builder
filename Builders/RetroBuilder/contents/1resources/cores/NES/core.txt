@@ -1,0 +1,1 @@
+app0:fceumm_libretro.self

@@ -1,0 +1,7 @@
+copy "startup.png" ".."
+exit
+
+
+
+
+
