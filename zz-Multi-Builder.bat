@@ -23,24 +23,6 @@ IF EXIST LICENSE (
 :NEXT2
 
 @echo off
-IF EXIST .batch (
-    attrib +h +s .batch
-    GOTO NEXT3
-  ) ELSE (
-    exit
-  )
-:NEXT3
-
-@echo off
-IF EXIST .git (
-    attrib +h +s .git
-    GOTO NEXT4
-  ) ELSE (
-    exit
-  )
-:NEXT4
-
-@echo off
 IF EXIST zz-Multi-Builder.bat (
     attrib -h -s zz-Multi-Builder.bat
     GOTO NEXT5
