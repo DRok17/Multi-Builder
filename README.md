@@ -5,7 +5,7 @@ Multi-Builder combines RetroBuilder, FAKE08-Builder, ScummVM-Builder and Bubble-
 Simply follow these steps:
 1) Download the required images (Supported formats: jpg, jpeg, bmp, png, jfif, tiff)
 2) Place them into the Input folder
-3) Name as: bg, icon0, startup
+3) Name as: bg, icon0, startup and pic0 (pic0 for Bubble-Builder only)
 4) Launch the Builder of choice from the Menu
 5) Select Simple VPK
 6) Name and add Title ID to the game of your choice
