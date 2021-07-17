@@ -14,9 +14,14 @@ Simply follow these steps:
 
 Optional:
 
-Define Folder Path available for RetroBuilder, and ScummVM-Builder.
+Define Folder Path - Available for RetroBuilder, and ScummVM-Builder.
 
-Define LiveArea Style available for all Builders.
+Define LiveArea Style - Available for all Builders.
+
+Default Builder - Choose which Builder to open by default.
+
+Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input folder, paths will generate automatically based on filename.
+
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81541725/126051476-77e06022-d2db-47bb-a625-dc4910a3427a.png?raw=true" alt="Sublime's custom image"/>
