@@ -4,7 +4,7 @@ mode 32,18
 set /p appver=< .\appver.txt
 Title SCUMMVM
 ECHO          SCUMMVM-BUILDER
-ECHO               %appver%
+ECHO.
 ECHO ................................
 ECHO.
 ECHO   * Simple VPK Creation Tools *

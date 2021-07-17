@@ -5,7 +5,7 @@ set /p fold=< .\def-vita-path.txt
 set /p appver=< .\appver.txt
 Title FAKE08-BUILDER
 ECHO                  FAKE08-BUILDER
-ECHO                        %appver%
+ECHO.
 ECHO ..................................................
 ECHO.
 ECHO Current Path : %fold%

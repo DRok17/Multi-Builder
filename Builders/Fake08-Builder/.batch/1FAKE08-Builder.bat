@@ -4,7 +4,7 @@ mode 32,17
 set /p appver=< .\appver.txt
 Title FAKE08-BUILDER
 ECHO          FAKE08-BUILDER
-ECHO               %appver%
+ECHO.
 ECHO ................................
 ECHO.
 ECHO   * Simple VPK Creation Tools *
@@ -31,9 +31,16 @@ IF %M%==M GOTO MULTI
 IF %M%==m GOTO MULTI
 IF %M%==v GOTO VPKF
 IF %M%==v GOTO VPKF
+IF %M%==i GOTO INFO
+IF %M%==I GOTO INFO
 IF %M%==r GOTO RESTART
 
 :RESTART
+GOTO MENU
+
+:INFO
+cd .
+start INFO-FAKE08-BUILDER.bat
 GOTO MENU
 
 :VPKF

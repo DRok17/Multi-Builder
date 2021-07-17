@@ -5,7 +5,7 @@ set /p defa=< .\.batch\def-vita-path.txt
 set /p appver=< .\.batch\appver.txt
 Title SCUMMVM-BUILDER
 ECHO                  SCUMMVM-BUILDER
-ECHO                        %appver%
+ECHO.
 ECHO ..................................................
 ECHO.
 @echo off

@@ -5,7 +5,7 @@ set /p stycur=< .\z-lastyle-cur.txt
 set /p appver=< .\appver.txt
 Title BUBBLE-BUILDER
 ECHO                   BUBBLE-BUILDER
-ECHO                        %appver%
+ECHO.
 ECHO ..................................................
 ECHO.
 ECHO Current Style : %stycur%

@@ -4,10 +4,10 @@ mode 33,18
 set /p appver=< .\appver.txt
 Title BUBBLE-BUILDER
 ECHO           BUBBLE-BUILDER
-ECHO                %appver%
+ECHO.
 ECHO .................................
 ECHO.
-ECHO    * Simple VPK Creation Tools *
+ECHO   * Simple VPK Creation Tools *
 ECHO.
 ECHO      1 - Input Folder
 ECHO      2 - Simple VPK

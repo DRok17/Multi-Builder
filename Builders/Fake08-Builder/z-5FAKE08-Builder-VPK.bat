@@ -5,7 +5,7 @@ set /p defa=< .\.batch\def-vita-path.txt
 set /p appver=< .\.batch\appver.txt
 Title FAKE08-BUILDER
 ECHO                  FAKE08-BUILDER
-ECHO                        %appver%
+ECHO.
 ECHO ..................................................
 ECHO.
 @echo off
@@ -41,6 +41,7 @@ IF EXIST .\.batch\folder.txt (
   )
 
 :FS
+@echo off
 
 md "..\..\input\f8-rom"
 
@@ -68,6 +69,7 @@ set /p path=< .\contents\file2.txt
 @echo|set /p="%id%"> "contents/bub-id.txt"
 @echo|set /p="%defa%/%path%"> "contents/path.txt"
 @echo|set /p="%title%"> "contents/bub-name.txt"
+@echo off
 copy "..\..\*.png*" "."
 copy "..\..\.batch\vita-mksfoex.exe" "."
 copy "..\..\.batch\vita-pack-vpk.exe" "."
@@ -93,6 +95,7 @@ vita-pack-vpk -s contents/param.sfo -b contents/eboot.bin "%id%.vpk" -a icon0.pn
 GOTO CLNUP
 
 :CLNUP
+@echo off
 move ".\*.vpk*" "..\..\VPK"
 del "vita-pack-vpk.exe"
 del "vita-mksfoex.exe"
@@ -107,7 +110,7 @@ mode 50,12
 set /p appver=< .\.batch\appver.txt
 Title FAKE08-BUILDER
 ECHO                  FAKE08-BUILDER
-ECHO                        %appver%
+ECHO.
 ECHO ..................................................
 ECHO.
 ECHO.

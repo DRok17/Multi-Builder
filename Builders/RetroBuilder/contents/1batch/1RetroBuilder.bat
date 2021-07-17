@@ -53,10 +53,18 @@ IF %M%==M GOTO MULTI
 IF %M%==m GOTO MULTI
 IF %M%==l GOTO DEFSTY
 IF %M%==L GOTO DEFSTY
+IF %M%==i GOTO INFO
+IF %M%==I GOTO INFO
 IF %M%==r GOTO RESTART
 
 :RESTART
 GOTO MENU
+
+:INFO
+cd .
+start INFO-RETROBUILDER.bat
+GOTO MENU
+
 
 :DEFSTY
 cd .
@@ -94,7 +102,7 @@ ECHO      C - Contents Folder              33 - Startup PNG Folders
 ECHO      V - VPK Folder                   44 - Main RB Folder
 ECHO.
 ECHO.
-SET /P M=Type Number then ENTER, S for SIMPLE or 0 for EXIT :
+SET /P M=Type # then ENTER, S for SIMPLE, M for MULTI or 0 for EXIT :
 IF %M%==0 GOTO EOF
 IF %M%==1 GOTO INPF2
 IF %M%==2 GOTO EVPK2
@@ -121,18 +129,22 @@ IF %M%==S GOTO MENU
 IF %M%==00 GOTO SAMP2
 IF %M%==M GOTO MULTI
 IF %M%==m GOTO MULTI
-IF %M%==r GOTO RESTART
+IF %M%==i GOTO INFO2
+IF %M%==I GOTO INFO2
+IF %M%==r GOTO RESTART2
 
-:RESTART
-GOTO MENU
+:RESTART2
+GOTO ADOP
+
+:INFO2
+cd .
+start INFO-RETROBUILDER.bat
+GOTO ADOP
 
 :MULTI
 cd "../../../../"
 start zz-Multi-Builder.bat
 GOTO EOF
-
-GOTO MENU
-
 
 :CORV
 @ECHO OFF

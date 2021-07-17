@@ -5,7 +5,7 @@ set /p fold=< .\def-vita-path.txt
 set /p appver=< .\appver.txt
 Title SCUMMVM-BUILDER
 ECHO                  SCUMMVM-BUILDER
-ECHO                        %appver%
+ECHO.
 ECHO ..................................................
 ECHO.
 ECHO Current Path : %fold%

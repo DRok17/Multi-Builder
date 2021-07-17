@@ -5,7 +5,7 @@ set /p stycur=< .\z-lastyle-cur.txt
 set /p appver=< .\appver.txt
 Title SCUMMVM-BUILDER
 ECHO                   SCUMMVM-BUILDER
-ECHO                        %appver%
+ECHO.
 ECHO ..................................................
 ECHO.
 ECHO Current Style : %stycur%

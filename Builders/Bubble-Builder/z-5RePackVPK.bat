@@ -54,7 +54,7 @@ mode 50,12
 set /p appver=< .\.batch\appver.txt
 Title BUBBLE-BUILDER
 ECHO                   BUBBLE-BUILDER
-ECHO                        %appver%
+ECHO.
 ECHO ..................................................
 ECHO.
 ECHO.
@@ -77,6 +77,7 @@ IF EXIST .\param.sfo (
     GOTO CLNUP
   )
 :CLNUP
+@echo off
 ren "..\..\vpk\*.zip" "*.vpk"
 ren bg0.png bg.png
 del "*.png*"

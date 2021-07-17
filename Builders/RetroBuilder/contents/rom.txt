@@ -1,1 +1,1 @@
-ux0:Roms/GEN/hello-world.bin
+ux0:Roms/SNES/Mega Man X.SMC

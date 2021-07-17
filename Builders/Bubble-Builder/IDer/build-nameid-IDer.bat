@@ -4,7 +4,7 @@ mode 50,12
 set /p appver=< ..\.batch\appver.txt
 Title BUBBLE-BUILDER
 ECHO                   BUBBLE-BUILDER
-ECHO                        %appver%
+ECHO.
 ECHO ..................................................
 ECHO.
 @echo off
