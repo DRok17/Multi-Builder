@@ -35,6 +35,11 @@ Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input f
   <img src="https://user-images.githubusercontent.com/81541725/124622299-fd15ad80-de48-11eb-9fe2-86e9dccd2f9e.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/81541725/124930830-a8e90580-dfcf-11eb-980b-999fe3a546bc.png?raw=true" alt="RetroBuilder"/>
+</p>
+
+
 
 For the best results, please use the Photos App (standard Windows app) to crop images BEFORE conversion.
 
