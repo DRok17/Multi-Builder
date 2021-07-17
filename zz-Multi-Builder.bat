@@ -1,15 +1,64 @@
 @echo off
 
+cd "."
+
+IF EXIST .\.batch\z-hidden.txt (
+    GOTO NEXT5
+  ) ELSE (
+    for %%i in (.\*.bat) do if not "%%i"==".\zz-Multi-Builder.bat" attrib +h +s *.bat
+    for %%i in (.\*.exe) do if not "%%i"==".\zz-Multi-Builder.bat" attrib +h +s *.exe
+    attrib +h .batch
+    GOTO NEXT1
+  )
+:NEXT1
+
+@echo off
+(echo HIDDEN) > ".\.batch\z-hidden.txt"
+IF EXIST LICENSE (
+    attrib +h +s LICENSE
+    GOTO NEXT2
+  ) ELSE (
+    exit
+  )
+:NEXT2
+
+@echo off
+IF EXIST .batch (
+    attrib +h +s .batch
+    GOTO NEXT3
+  ) ELSE (
+    exit
+  )
+:NEXT3
+
+@echo off
+IF EXIST .git (
+    attrib +h +s .git
+    GOTO NEXT4
+  ) ELSE (
+    exit
+  )
+:NEXT4
+
+@echo off
+IF EXIST zz-Multi-Builder.bat (
+    attrib -h -s zz-Multi-Builder.bat
+    GOTO NEXT5
+  ) ELSE (
+    exit
+  )
+:NEXT5
+
 cd ".\.batch"
 
 IF EXIST .\defbuild.txt (
     @echo off
     set /p BUILD=< .\defbuild.txt
-    GOTO NEXT
+    GOTO NEXT2
   ) ELSE (
     GOTO MULTI
   )
-:NEXT
+:NEXT2
 GOTO %BUILD%
 
 :RETRO
