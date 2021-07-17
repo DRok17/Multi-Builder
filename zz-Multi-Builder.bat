@@ -31,6 +31,18 @@ IF EXIST zz-Multi-Builder.bat (
   )
 :NEXT5
 
+IF EXIST .\.batch\z-deleteme.txt (
+    del .\input\deleteme.txt
+    del .\input\app-folder\deleteme.txt
+    del .\vpk\deleteme.txt
+    del .\vpk\.trash\deleteme.txt
+    del .\.batch\z-deleteme.txt
+    GOTO NEXT6
+  ) ELSE (
+    GOTO NEXT6
+  )
+:NEXT6
+
 cd ".\.batch"
 
 IF EXIST .\defbuild.txt (
