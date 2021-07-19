@@ -157,7 +157,7 @@ set /p nesc=< ..\1resources\cores\nes\core.txt
 set /p snesc=< ..\1resources\cores\snes\core.txt
 set /p cuco=< ..\core.txt
 set /p curo=< ..\rom.txt
-ECHO                        DEFAULT CORES VIEWER
+ECHO                         DEFAULT CORES VIEWER
 ECHO.
 ECHO ....................................................................
 ECHO.
@@ -184,8 +184,11 @@ IF %M%==3 GOTO GENF
 IF %M%==4 GOTO GGF
 IF %M%==5 GOTO NESF
 IF %M%==6 GOTO SNESF
+IF %M%==r GOTO RESTART3
 
-GOTO MENU
+:RESTART3
+GOTO CORV
+
 
 :CORV2
 @ECHO OFF
@@ -225,6 +228,10 @@ IF %M%==3 GOTO GENF2
 IF %M%==4 GOTO GGF2
 IF %M%==5 GOTO NESF2
 IF %M%==6 GOTO SNESF2
+IF %M%==r GOTO RESTART4
+
+:RESTART4
+GOTO CORV2
 
 GOTO ADOP
 
