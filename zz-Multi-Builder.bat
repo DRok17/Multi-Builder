@@ -7,6 +7,7 @@ IF EXIST .\.batch\z-hidden.txt (
   ) ELSE (
     for %%i in (.\*.bat) do if not "%%i"==".\zz-Multi-Builder.bat" attrib +h +s *.bat
     for %%i in (.\*.exe) do if not "%%i"==".\zz-Multi-Builder.bat" attrib +h +s *.exe
+    for %%i in (.\*.md) do if not "%%i"==".\zz-Multi-Builder.bat" attrib +h +s *.md
     attrib +h .batch
     GOTO NEXT1
   )
