@@ -28,6 +28,29 @@ IF EXIST ..\..\input\app-folder\%id%\sce_sys\livearea\contents\bg0.png (
   )
 :NEXT2
 IF EXIST ..\..\input\app-folder\%id%\sce_sys\livearea\contents\default_gate.png (
+    GOTO GATE
+  ) ELSE (
+    GOTO NEXT3
+  )
+:GATE
+@ECHO OFF
+mode 50,12
+set /p appver=< .\.batch\appver.txt
+Title BUBBLE-BUILDER
+ECHO                   BUBBLE-BUILDER
+ECHO.
+ECHO ..................................................
+ECHO.
+ECHO.
+ECHO.
+ECHO                    PLEASE WAIT
+ECHO.
+ECHO.
+ECHO.
+ECHO.
+timeout 3 >nul
+@echo off
+IF EXIST ..\..\input\app-folder\%id%\sce_sys\livearea\contents\default_gate.png (
     ren "..\..\input\app-folder\%id%\sce_sys\livearea\contents\default_gate.png" "startup.png"
     cd .\.batch
     start /min template-gate-OUT.bat
