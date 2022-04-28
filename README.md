@@ -22,9 +22,8 @@ Default Builder - Choose which Builder to open by default.
 
 Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input folder, paths will generate automatically based on filename.
 
-
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/81541725/126051476-77e06022-d2db-47bb-a625-dc4910a3427a.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/81541725/165662130-a5e7ba0b-1e94-4bee-ac3d-8cf9825ebc07.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 <p align="center">
