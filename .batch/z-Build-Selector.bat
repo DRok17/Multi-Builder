@@ -1,6 +1,6 @@
 :MENU
 @ECHO OFF
-mode 32,13
+mode 32,14
 ECHO          DEFAULT BUILDER
 ECHO.
 ECHO ................................
@@ -11,7 +11,8 @@ ECHO      1 - RetroBuilder
 ECHO      2 - FAKE08-Builder
 ECHO      3 - ScummVM-Builder
 ECHO      4 - Bubble-Builder
-ECHO      5 - Reset to Multi
+ECHO      5 - YoYo-Builder
+ECHO      6 - Reset to Multi
 ECHO.
 SET /P M=Type # or 0 for EXIT :
 IF %M%==0 GOTO EOF
@@ -19,8 +20,8 @@ IF %M%==1 GOTO RETRO
 IF %M%==2 GOTO FAKE
 IF %M%==3 GOTO SCUMM
 IF %M%==4 GOTO BUBBLE
-IF %M%==5 GOTO RESET
-
+IF %M%==5 GOTO YOYO
+IF %M%==6 GOTO RESET
 
 :RETRO
 del ".\defbuild.txt"
@@ -40,6 +41,11 @@ GOTO EOF
 :BUBBLE
 del ".\defbuild.txt"
 (echo  BUBBLE) > ".\defbuild.txt"
+GOTO EOF
+
+:YOYO
+del ".\defbuild.txt"
+(echo  YOYO) > ".\defbuild.txt"
 GOTO EOF
 
 :RESET

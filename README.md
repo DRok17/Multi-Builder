@@ -1,11 +1,11 @@
 # Multi-Builder
 
-Multi-Builder combines RetroBuilder, FAKE08-Builder, ScummVM-Builder, Bubble-Builder and YoYo-Builder.
+Multi-Builder combines RetroBuilder, FAKE08-Builder, ScummVM-Builder and Bubble-Builder.
 
 Simply follow these steps:
-1) Download the required images/files (Supported formats: jpg, jpeg, bmp, png, jfif, tiff, apk)
+1) Download the required images (Supported formats: jpg, jpeg, bmp, png, jfif, tiff)
 2) Place them into the Input folder
-3) Name as: bg, icon0, startup and pic0 (pic0 for Bubble-Builder only) NOTE: Apk file can be left as is.
+3) Name as: bg, icon0, startup and pic0 (pic0 for Bubble-Builder only)
 4) Launch the Builder of choice from the Menu
 5) Select Simple VPK
 6) Name and add Title ID to the game of your choice
@@ -13,8 +13,6 @@ Simply follow these steps:
 8) Transfer and install to the Vita.
 
 Optional:
-
-Game Configuration - Available for YoYo-Builder. (yyl.cfg)
 
 Define Folder Path - Available for RetroBuilder, and ScummVM-Builder.
 
@@ -26,7 +24,7 @@ Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input f
 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/81541725/165662130-a5e7ba0b-1e94-4bee-ac3d-8cf9825ebc07.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/81541725/126051476-77e06022-d2db-47bb-a625-dc4910a3427a.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 <p align="center">
@@ -59,7 +57,7 @@ u/W00lfwang for detailing the RetroArch Bubble Booter method.
 
 u/histefanhere for the alternate RetroArch Bubble Booter method using python.
 
-Rinnegatamante for porting DaedalusX64 and providing a method to create those Bubbles and everything else he does.https://github.com/Rinnegatamante/yoyoloader_vita
+Rinnegatamante for porting DaedalusX64 and providing a method to create those Bubbles and everything else he does.
 
 ** FAKE08-BUILDER **
 

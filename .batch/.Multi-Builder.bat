@@ -1,6 +1,6 @@
 :MENU
 @ECHO OFF
-mode 55,18
+mode 55,20
 set /p appver=< .\appver.txt
 Title MULTI-BUILDER
 ECHO                      MULTI-BUILDER
@@ -13,6 +13,8 @@ ECHO     1 - RetroBuilder         11 - Input Folder
 ECHO     2 - FAKE-08-Builder      22 - Image Converter
 ECHO     3 - ScummVM-Builder      33 - Converted Images
 ECHO     4 - Bubble-Builder       44 - Wipe Input/Contents
+ECHO.                  
+ECHO                    5 - YoYo-Builder         
 ECHO.
 ECHO.
 ECHO                * Settings and Folders *
@@ -26,6 +28,7 @@ IF %M%==1 GOTO RETRO
 IF %M%==2 GOTO FAKE
 IF %M%==3 GOTO SCUMM
 IF %M%==4 GOTO BUBBLE
+IF %M%==5 GOTO YOYO
 IF %M%==11 GOTO INPF
 IF %M%==22 GOTO PNG
 IF %M%==33 GOTO IMG
@@ -102,6 +105,14 @@ cd "../Builders/Bubble-Builder"
 start zz-Bubble-Builder.bat
 GOTO EOF
 
+:YOYO
+:: 14
+:: 24
+del ".\app.txt"
+(echo YOYO-BUILDER) > ".\app.txt"
+cd "../Builders/YOYO-Builder"
+start zz-YoYo-Builder.bat
+GOTO EOF
 
 :WIPE
 cd .

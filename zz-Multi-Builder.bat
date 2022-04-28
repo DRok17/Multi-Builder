@@ -88,6 +88,14 @@ cd "../Builders/Bubble-Builder"
 start zz-Bubble-Builder.bat
 GOTO EOF
 
+:YOYO
+:: 14
+del ".\app.txt"
+(echo YOYO-BUILDER) > ".\app.txt"
+cd "../Builders/YOYO-Builder"
+start zz-YoYo-Builder.bat
+GOTO EOF
+
 :MULTI
 start .Multi-Builder.bat
 
