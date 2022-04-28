@@ -55,7 +55,6 @@ GOTO MENU
 
 :GAMECFG
 cd .
-copy "yyl.cfg" ".."
 start def-cfg.bat
 GOTO MENU
 
