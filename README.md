@@ -1,6 +1,6 @@
 # Multi-Builder
 
-Multi-Builder combines RetroBuilder, FAKE08-Builder, ScummVM-Builder and Bubble-Builder.
+Multi-Builder combines RetroBuilder, FAKE08-Builder, ScummVM-Builder, Bubble-Builder, and YoYo-Builder.
 
 Simply follow these steps:
 1) Download the required images/files (Supported formats: jpg, jpeg, bmp, png, jfif, tiff, apk)
