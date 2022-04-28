@@ -29,6 +29,10 @@ Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input f
 </p>
 
 <p align="center">
+  <img src="https://user-images.githubusercontent.com/81541725/165672775-01c853c4-7f94-44e1-96b7-4c6eb4067121.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
+<p align="center">
   <img src="https://user-images.githubusercontent.com/81541725/124622007-b922a880-de48-11eb-9052-a07699425ca6.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
