@@ -33,11 +33,11 @@ Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input f
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/81541725/124622007-b922a880-de48-11eb-9052-a07699425ca6.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/81541725/165674041-970872a2-9ef0-479d-9086-df648d977c1a.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/81541725/124622299-fd15ad80-de48-11eb-9fe2-86e9dccd2f9e.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/81541725/165674341-be0efee9-b4c9-4c9b-8cc1-5206467c7179.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
  <p align="center">
