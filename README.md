@@ -3,7 +3,7 @@
 Multi-Builder combines RetroBuilder, FAKE08-Builder, ScummVM-Builder, Bubble-Builder, and YoYo-Builder.
 
 Simply follow these steps:
-1) Download the required images/files (Supported formats: jpg, jpeg, bmp, png, jfif, tiff, apk)
+1) Download the required images/files (Supported formats: jpg, jpeg, bmp, png, jfif, tiff, apk, and cfg)
 2) Place them into the Input folder
 3) Name as: bg, icon0, startup and pic0 (pic0 for Bubble-Builder only; apk file be left as is for YoYo-Builder)
 4) Launch the Builder of choice from the Menu
@@ -12,7 +12,15 @@ Simply follow these steps:
 7) VPK will then generate in VPK folder
 8) Transfer and install to the Vita.
 
-Optional:
+#### Optional: Define LiveArea Style available. See below:
+
+Center = a1             Left = psmobile
+
+Center-Upper = a2        Left-Upper = a5
+
+Left-Lower = vd
+
+#### Other options:
 
 Game Configuration - Available for YoYo-Builder.
 
@@ -29,7 +37,7 @@ Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input f
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/81541725/165672775-01c853c4-7f94-44e1-96b7-4c6eb4067121.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/81541725/165885346-12315363-02f6-4783-9686-514231d737b7.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 <p align="center">
@@ -48,9 +56,40 @@ Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input f
 
 For the best results, please use the Photos App (standard Windows app) to crop images BEFORE conversion.
 
-bg, startup = Widescreen - 16:9
+#### bg, startup = Widescreen - 16:9
 
-icon0 = Square
+#### icon0 = Square
+
+# Retro-Builder
+
+Retro-Builder allows anyone to create Retroarch and DaedalusX64 Bubbles easy.
+
+Just place any supported ROM file and three required images into the Input folder.
+
+![image](https://user-images.githubusercontent.com/81541725/165884846-7ac8f0f6-d3ed-42a7-9f95-1c1641658b34.png)
+![image](https://user-images.githubusercontent.com/81541725/165884910-11417727-0ac3-41e7-9407-b46a338a0541.png)
+
+# Fake08-Builder
+
+Fake-08-Builder is a tool for Windows 10 that creates LiveArea Bubbles for Pico-8 carts on the PS Vita.
+
+![image](https://user-images.githubusercontent.com/81541725/165884600-4ed03681-9c80-4e60-a607-88124d793dc8.png)
+![image](https://user-images.githubusercontent.com/81541725/165884642-816c9284-cb5a-4da5-96fc-2a5764ee7511.png)
+
+# ScummVM-Builder
+![image](https://user-images.githubusercontent.com/81541725/165885760-78815d7a-61c9-48a8-bad3-ac04b621a606.png)
+![image](https://user-images.githubusercontent.com/81541725/165885713-fd510a95-72ad-4255-9d50-fd4861d162da.png)
+
+# Bubble-Builder
+Bubble-Builder is a total VPK re-packaging tool for Homebrew and Adrenaline Bubble Booter assets. PNGs, Title and IDs can now all be modified with ease on WIndows 10 PCs.
+
+Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, download the required images to Input folder, and title/ID as needed (if VPK requires additional ux0:data folder, please select Y when prompted, otherwise select N). New VPK can then be generated and installed on the Vita.
+
+![image](https://user-images.githubusercontent.com/81541725/165886234-413fca5c-c8ea-4148-953d-1668a958fff8.png)
+![image](https://user-images.githubusercontent.com/81541725/165886631-021afd50-a8f1-43a4-b9fb-2ffae488674d.png)
+# YoYo-Builder
+![image](https://user-images.githubusercontent.com/81541725/165887109-2a210ef8-6d7e-47fb-88e3-877b65e88541.png)
+![image](https://user-images.githubusercontent.com/81541725/165887211-464e0fba-d9f1-4ee3-90b8-d97c4eb2414b.png)
 
 ## Shoutouts:
 
