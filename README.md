@@ -37,7 +37,7 @@ Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input f
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/81541725/165674341-be0efee9-b4c9-4c9b-8cc1-5206467c7179.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/81541725/165679344-e85249a5-b0e7-4d43-b794-fed002c511de.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
  <p align="center">
@@ -52,9 +52,9 @@ bg, startup = Widescreen - 16:9
 
 icon0 = Square
 
-Shoutouts:
+## Shoutouts:
 
-** RETROBUILDER **
+#### ** RETROBUILDER **
 
 SayianPrinceVegeta: Providing the inspiration for all of this and helping shape Simple VPK.
 
@@ -64,19 +64,22 @@ u/histefanhere for the alternate RetroArch Bubble Booter method using python.
 
 Rinnegatamante for porting DaedalusX64 and providing a method to create those Bubbles and everything else he does.https://github.com/Rinnegatamante/yoyoloader_vita
 
-** FAKE08-BUILDER **
+
+#### ** FAKE08-BUILDER **
 
 jtothebell: Creator of Fake-08 - https://github.com/jtothebell/fake-08
 
 Lexaloffle Team: https://www.lexaloffle.com/pico-8.php
 
-** SCUMMVM-BUILDER **
+
+#### ** SCUMMVM-BUILDER **
 
 ScummVM Team: https://github.com/scummvm/scummvm
 
 cy33hc: For creating the Scummvm Bubble Booter - https://github.com/cy33hc/scummvm-bubble-booter
 
-** BUBBLE-BUILDER **
+
+#### ** BUBBLE-BUILDER **
 
 TheOfficialFloW - Creator of Adrenaline
 
@@ -88,9 +91,11 @@ ImageMagick - Providing Composite.exe
 
 7Zip - Providing Zip2VPK tool
 
-** YOYO-BUILDER **
+
+#### ** YOYO-BUILDER **
 
 Rinnegatamante https://github.com/Rinnegatamante/yoyoloader_vita
+
 
 Original Apps:
 
