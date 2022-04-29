@@ -95,11 +95,24 @@ copy "template.xml" "..\..\input\app-folder\%id%\sce_sys\livearea\contents\"
 @echo off
 IF EXIST .\param.sfo (
     7z.exe a ..\..\vpk\"%sfo%".zip "..\..\input\app-folder\%id%\*"
+    GOTO CLNUPSFO
   ) ELSE (
     7z.exe a ..\..\vpk\"%id%".zip "..\..\input\app-folder\%id%\*"
     GOTO CLNUP
   )
+:CLNUPSFO
+IF EXIST ..\..\vpk\%sfo%.vpk (
+    del "..\..\vpk\%sfo%.vpk"
+  ) ELSE (
+    GOTO RENA
+  )
 :CLNUP
+IF EXIST ..\..\vpk\%id%.vpk (
+    del "..\..\vpk\%id%.vpk"
+  ) ELSE (
+    GOTO RENA
+  )
+:RENA
 @echo off
 ren "..\..\vpk\*.zip" "*.vpk"
 ren bg0.png bg.png
