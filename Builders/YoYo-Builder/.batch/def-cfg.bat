@@ -15,9 +15,9 @@ set /p .10=< .\config\10.txt
 set /p .11=< .\config\11.txt
 set /p .12=< .\config\12.txt
 Title YOYO-BUILDER
-ECHO             YOYO-BUILDER %appver%
+ECHO              YOYO-BUILDER %appver%
 ECHO.
-ECHO .......................................
+ECHO ...........................................
 ECHO.
 ECHO        * Game Configuration Selector *
 ECHO.

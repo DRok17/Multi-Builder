@@ -4,7 +4,7 @@ mode 50,12
 set /p appver=< .\appver.txt
 set /p appdate=< .\appdate.txt
 Title SCUMMVM-BUILDER
-ECHO                   YOYO-BUILDER
+ECHO                    YOYO-BUILDER
 ECHO                       
 ECHO ..................................................
 ECHO.

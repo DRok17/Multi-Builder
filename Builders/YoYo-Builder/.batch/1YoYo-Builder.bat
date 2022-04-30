@@ -1,9 +1,10 @@
 :MENU
 @ECHO OFF
+:: WIDTH minus app.txt divided by 2 plus 6
 mode 32,19
 set /p appver=< .\appver.txt
 Title YOYO
-ECHO          YOYO-BUILDER
+ECHO           YOYO-BUILDER
 ECHO.
 ECHO ................................
 ECHO.
