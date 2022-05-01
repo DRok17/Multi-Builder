@@ -1,1 +1,1 @@
-ux0:Roms/SNES/Mega Man X.SMC
+ux0:Roms/GB/Pokemon.gbc

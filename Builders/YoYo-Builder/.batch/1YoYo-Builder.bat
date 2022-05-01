@@ -34,10 +34,6 @@ IF %M%==v GOTO VPKF
 IF %M%==v GOTO VPKF
 IF %M%==M GOTO MULTI
 IF %M%==m GOTO MULTI
-IF %M%==r GOTO RESTART
-
-:RESTART
-GOTO MENU
 
 :MULTI
 cd "../../../.batch"
