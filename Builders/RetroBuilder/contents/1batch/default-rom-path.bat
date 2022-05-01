@@ -2,7 +2,7 @@
 @ECHO OFF
 mode 50,12
 set /p appver=< .\appver.txt
-Title RETROBUILDER %appver%
+Title RETROBUILDER 
 set /p fold=< ..\1resources\sys\def-rom-path.txt
 @echo|set /p="%fold%"> "../1resources/sys/prv-rom-path.txt"
 set /p prvp=< ..\1resources\sys\prv-rom-path.txt

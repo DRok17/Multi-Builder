@@ -2,7 +2,7 @@
 @ECHO OFF
 mode 50,12
 set /p appver=< .\contents\1batch\appver.txt
-Title RETROBUILDER %appver%
+Title RETROBUILDER 
 ECHO                  RETROBUILDER
 ECHO.
 ECHO ..................................................
@@ -280,7 +280,7 @@ GOTO TMOUT3
 @ECHO OFF
 mode 50,12
 set /p appver=< .\contents\1batch\appver.txt
-Title RETROBUILDER %appver%
+Title RETROBUILDER 
 ECHO                    RETROBUILDER
 ECHO.
 ECHO ..................................................
@@ -299,7 +299,7 @@ GOTO VPKC
 @ECHO OFF
 mode 50,12
 set /p appver=< .\contents\1batch\appver.txt
-Title RETROBUILDER %appver%
+Title RETROBUILDER 
 ECHO                    RETROBUILDER
 ECHO.
 ECHO ..................................................
@@ -318,7 +318,7 @@ GOTO CON
 @ECHO OFF
 mode 50,12
 set /p appver=< .\contents\1batch\appver.txt
-Title RETROBUILDER %appver%
+Title RETROBUILDER 
 ECHO                    RETROBUILDER
 ECHO.
 ECHO ..................................................

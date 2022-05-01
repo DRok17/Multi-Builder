@@ -82,7 +82,7 @@ GOTO MENU
 @ECHO OFF
 mode 68,20
 set /p appver=< .\appver.txt
-Title RETROBUILDER %appver%
+Title RETROBUILDER 
 ECHO                             RETROBUILDER
 ECHO.
 ECHO ....................................................................
