@@ -1,10 +1,48 @@
 @echo off
-
-cd "../../../../.batch"
+cd "../../../../input"
+IF EXIST *.png (
+    GOTO PNG
+  ) ELSE (
+    GOTO NEXT01
+  )
+:NEXT01
+IF EXIST *.jpg (
+    GOTO PNG
+  ) ELSE (
+    GOTO NEXT02
+  )
+:NEXT02
+IF EXIST *.jpeg (
+    GOTO PNG
+  ) ELSE (
+    GOTO NEXT03
+  )
+:NEXT03
+IF EXIST *.bmp (
+    GOTO PNG
+  ) ELSE (
+    GOTO NEXT04
+  )
+:NEXT04
+IF EXIST *.jfif (
+    GOTO PNG
+  ) ELSE (
+    GOTO NEXT05
+  )
+:NEXT05
+IF EXIST *.tiff (
+    GOTO PNG
+  ) ELSE (
+    GOTO BUILD
+  )
+:PNG
+@echo off
+cd "../.batch"
 start PNGConvertOUT.bat
 
 timeout 18 >nul
 
+:BUILD
 cd "..\input"
 
 @echo off
