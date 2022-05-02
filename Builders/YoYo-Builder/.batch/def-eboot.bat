@@ -3,7 +3,7 @@
 mode 33,10
 set /p appver=< .\appver.txt
 Title YOYO-BUILDER
-ECHO          YOYO-BUILDER %appver%
+ECHO            YOYO-BUILDER
 ECHO.
 ECHO .................................
 ECHO.
