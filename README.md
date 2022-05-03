@@ -1,26 +1,29 @@
 # Multi-Builder
 
+Multi-Builder is a PS Vita LiveArea bubble creation and editing tool for Windows 10/11.
+
+Bubbles available:
+- Retroarch
+- DaedalusX64
+- FAKE08
+- ScummVM
+- YoYo Loader Vita
+- Homebrew
+- Adrenaline Bubble Booter or Adrenaline Bubble Manager
+
 Multi-Builder combines RetroBuilder, FAKE08-Builder, ScummVM-Builder, Bubble-Builder, and YoYo-Builder.
 
 Simply follow these steps:
 1) Download the required images/files (Supported formats: jpg, jpeg, bmp, png, jfif, tiff, apk, and cfg)
 2) Place them into the Input folder
-3) Name as: bg, icon0, startup and pic0 (pic0 for Bubble-Builder only; apk file be left as is for YoYo-Builder)
+3) Name as: bg, icon0, and startup (pic0 for Bubble-Builder only; apk file be left as is for YoYo-Builder)
 4) Launch the Builder of choice from the Menu
 5) Select Simple VPK
 6) Name and add Title ID to the game of your choice
 7) VPK will then generate in VPK folder
 8) Transfer and install to the Vita.
 
-#### Optional: Define LiveArea Style available. See below:
-
-Center = a1             Left = psmobile
-
-Center-Upper = a2        Left-Upper = a5
-
-Left-Lower = vd
-
-#### Other options:
+#### Options:
 
 Game Configuration - Available for YoYo-Builder.
 
@@ -33,7 +36,7 @@ Default Builder - Choose which Builder to open by default.
 Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input folder, paths will generate automatically based on filename.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/81541725/165669010-3795be14-7f40-418f-8cc0-0f3a2bb33737.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/81541725/166173674-43dc5fa3-48aa-4056-b45c-fe4a1504b5f4.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 <p align="center">
