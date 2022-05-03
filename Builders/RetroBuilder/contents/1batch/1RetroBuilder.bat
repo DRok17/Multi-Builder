@@ -18,7 +18,7 @@ ECHO    * Settings and Folders *
 ECHO.
 ECHO      R - Set Rom Folder
 ECHO      D - Default Cores Viewer
-ECHO      L - Define LiveArea Style
+ECHO      L - LiveArea Style
 ECHO      V - VPK Folder
 ECHO.
 ECHO      A - Advanced Options
@@ -59,6 +59,13 @@ IF %M%==r GOTO RESTART
 
 :RESTART
 GOTO MENU
+
+:INPF
+cd "../../../../.batch"
+start OpenInputFolderOUT.bat
+cd "../Builders/RetroBuilder/contents/1batch"
+GOTO MENU
+
 
 :INFO
 cd .
@@ -394,12 +401,6 @@ cd "../../../../.batch"
 start OpenInputFolderOUT.bat
 cd "../Builders/RetroBuilder/contents/1batch"
 GOTO ADOP
-
-:INPF
-cd "../../../../.batch"
-start OpenInputFolderOUT.bat
-cd "../Builders/RetroBuilder/contents/1batch"
-GOTO MENU
 
 :APPVNID
 cd .

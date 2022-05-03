@@ -1,1 +1,1 @@
-ux0:Roms/GB/Pokemon.gbc
+ux0:Roms/GEN/Sonic The Hedgehog 2 (Europe) (Rev 1).sms

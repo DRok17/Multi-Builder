@@ -118,6 +118,12 @@ GOTO :EOF
 :SMD
 @ECHO OFF
 findstr /I /R [a-z]*\.smd  .\contents\rom.txt>NUL
+IF ERRORLEVEL 1 (GOTO SMS) ELSE (GOTO GEN)
+GOTO :EOF
+
+:SMS
+@ECHO OFF
+findstr /I /R [a-z]*\.sms  .\contents\file2.txt>NUL
 IF ERRORLEVEL 1 (GOTO SGG) ELSE (GOTO GEN)
 GOTO :EOF
 

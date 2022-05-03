@@ -1,1 +1,1 @@
-app0:gambatte_libretro.self
+app0:picodrive_libretro.self

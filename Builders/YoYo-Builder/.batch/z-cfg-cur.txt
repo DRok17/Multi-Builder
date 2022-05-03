@@ -1,1 +1,1 @@
-forceGLES1=0
+winMode=0

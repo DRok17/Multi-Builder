@@ -39,11 +39,10 @@ IF EXIST *.tiff (
 @echo off
 cd "../.batch"
 start PNGConvertOUT.bat
-
+cd "../input"
 timeout 18 >nul
 
 :BUILD
-cd "..\input"
 
 @echo off
 IF EXIST *.gbc (
@@ -146,10 +145,17 @@ IF EXIST *.nes (
     cd "../Builders/RetroBuilder/"
     GOTO APNID
   ) ELSE (
+    GOTO NEXT13
+  )
+:NEXT13
+@echo off
+ IF EXIST *.sms (
+    cd "../Builders/RetroBuilder/"
+    GOTO APNID
+  ) ELSE (
     cd "../Builders/RetroBuilder/"
     GOTO ANID
   )
-
 :APNID
 start build-autopath-nameid.bat
 

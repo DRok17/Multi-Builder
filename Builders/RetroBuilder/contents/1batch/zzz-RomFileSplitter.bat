@@ -4,6 +4,6 @@ for %%i in (..\*.txt*) do if not "%%i"=="..\core.txt" if not "%%i"=="..\rom.txt"
 
 cd "..\..\..\..\input"
 
-dir *.nes *.smc *.gbc *.gba *.gb *.gen *.bin *.smd *.gg *.sfc *.n64 *.z64 *.v64 /b > ..\file2.txt
+dir *.nes *.smc *.gbc *.gba *.gb *.gen *.bin *.smd *.sms *.gg *.sfc *.n64 *.z64 *.v64 /b > ..\file2.txt
 
 copy "..\file2.txt" "..\Builders\RetroBuilder\contents"
