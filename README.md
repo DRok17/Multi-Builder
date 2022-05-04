@@ -70,7 +70,7 @@ Retro-Builder allows anyone to create Retroarch and DaedalusX64 Bubbles easy.
 Just place any supported ROM file and three required images into the Input folder.
 
 ![image](https://user-images.githubusercontent.com/81541725/165884846-7ac8f0f6-d3ed-42a7-9f95-1c1641658b34.png)
-![image](https://user-images.githubusercontent.com/81541725/165884910-11417727-0ac3-41e7-9407-b46a338a0541.png)
+![image](https://user-images.githubusercontent.com/81541725/166613897-e364f51f-a47b-4242-9fa6-121aee33b852.png)
 
 # Fake08-Builder
 
