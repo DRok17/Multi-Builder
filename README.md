@@ -36,7 +36,7 @@ Default Builder - Choose which Builder to open by default.
 Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input folder, paths will generate automatically based on filename.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/81541725/166173674-43dc5fa3-48aa-4056-b45c-fe4a1504b5f4.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/81541725/166613480-0fdd719d-3e77-4ddb-be5c-1f7b9c60f0e9.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 <p align="center">
@@ -70,7 +70,7 @@ Retro-Builder allows anyone to create Retroarch and DaedalusX64 Bubbles easy.
 Just place any supported ROM file and three required images into the Input folder.
 
 ![image](https://user-images.githubusercontent.com/81541725/165884846-7ac8f0f6-d3ed-42a7-9f95-1c1641658b34.png)
-![image](https://user-images.githubusercontent.com/81541725/165884910-11417727-0ac3-41e7-9407-b46a338a0541.png)
+![image](https://user-images.githubusercontent.com/81541725/166613897-e364f51f-a47b-4242-9fa6-121aee33b852.png)
 
 # Fake08-Builder
 
@@ -92,7 +92,7 @@ Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, dow
 ![image](https://user-images.githubusercontent.com/81541725/165886631-021afd50-a8f1-43a4-b9fb-2ffae488674d.png)
 # YoYo-Builder
 ![image](https://user-images.githubusercontent.com/81541725/165887109-2a210ef8-6d7e-47fb-88e3-877b65e88541.png)
-![image](https://user-images.githubusercontent.com/81541725/165887211-464e0fba-d9f1-4ee3-90b8-d97c4eb2414b.png)
+![image](https://user-images.githubusercontent.com/81541725/166613576-a5c73db3-8b2d-41b2-915d-6c9f88066833.png)
 
 ## Shoutouts:
 
