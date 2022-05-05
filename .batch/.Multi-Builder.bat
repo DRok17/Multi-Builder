@@ -4,7 +4,7 @@ mode 55,20
 set /p appver=< .\appver.txt
 Title MULTI-BUILDER
 ECHO                      MULTI-BUILDER
-ECHO                           %appver%
+ECHO.                         
 ECHO .......................................................
 ECHO.
 ECHO        * Builders *             * Image Tools *

@@ -1,1 +1,1 @@
-winMode=1
+noSplash=1

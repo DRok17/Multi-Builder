@@ -2,6 +2,7 @@
 @ECHO OFF
 mode 43,27
 set /p appver=< .\appver.txt
+set /p wipe=< .\config\wipe.txt
 set /p .1=< .\config\1.txt
 set /p .2=< .\config\2.txt
 set /p .3=< .\config\3.txt
@@ -37,7 +38,7 @@ ECHO.
 ECHO      11 - Run with Debug Mode         %.11%
 ECHO      12 - Run with Shaders Debug Mode %.12%
 ECHO.
-ECHO       W - Wipe Config File
+ECHO       W - Wipe Config File  %wipe%
 ECHO.
 ECHO.     NOTE : CHANGES WILL CLEAR ON EXIT
 ECHO.
