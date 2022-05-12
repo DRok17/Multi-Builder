@@ -25,6 +25,8 @@ Simply follow these steps:
 
 #### Options:
 
+Eboot Updater - Keep your eboots update to date with YoYo Loader Vita Nightly builds.
+
 Game Configuration - Available for YoYo-Builder.
 
 Define Folder Path - Available for RetroBuilder, and ScummVM-Builder.
