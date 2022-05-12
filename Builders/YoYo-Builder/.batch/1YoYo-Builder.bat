@@ -1,7 +1,7 @@
 :MENU
 @ECHO OFF
 :: WIDTH minus app.txt divided by 2 plus 6
-mode 32,19
+mode 33,20
 set /p appver=< .\appver.txt
 Title YOYO
 ECHO           YOYO-BUILDER
@@ -21,6 +21,7 @@ ECHO      5 - Game Configuration
 ECHO      6 - Eboot Selector
 ECHO.
 ECHO      V - VPK Folder
+ECHO      E - Update Eboots
 ECHO.
 SET /P M=Type #, M or 0 for EXIT :
 IF %M%==0 GOTO EOF
@@ -31,7 +32,9 @@ IF %M%==4 GOTO DEFSTY
 IF %M%==5 GOTO GAMECFG
 IF %M%==6 GOTO EBOOT
 IF %M%==v GOTO VPKF
-IF %M%==v GOTO VPKF
+IF %M%==V GOTO VPKF
+IF %M%==e GOTO UPDATE
+IF %M%==E GOTO UPDATE
 IF %M%==M GOTO MULTI
 IF %M%==m GOTO MULTI
 
@@ -39,6 +42,11 @@ IF %M%==m GOTO MULTI
 cd "../../../.batch"
 start .Multi-Builder.bat
 GOTO EOF
+
+:UPDATE
+cd .
+start update-OUT.bat
+GOTO MENU
 
 :DEFSTY
 cd .

@@ -1,6 +1,6 @@
 :MENU
 @ECHO OFF
-mode 33,10
+mode 33,12
 set /p appver=< .\appver.txt
 Title YOYO-BUILDER
 ECHO            YOYO-BUILDER
@@ -12,10 +12,19 @@ ECHO.
 ECHO      1 - Standalone.bin
 ECHO      2 - Standalone_video.bin
 ECHO.
+ECHO      E - Update Eboots
+ECHO.
 SET /P M=Type # or 0 for EXIT :
 IF %M%==0 GOTO EOF
 IF %M%==1 GOTO STANDARD
 IF %M%==2 GOTO VIDEO
+IF %M%==e GOTO UPDATE
+IF %M%==E GOTO UPDATE
+:UPDATE
+cd .
+start update-OUT.bat
+GOTO MENU
+
 :STANDARD
 @echo off
 IF EXIST ..\eboots\standalone.bin (
