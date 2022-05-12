@@ -63,6 +63,7 @@ IF %M%==W GOTO WIPE
 :EOF
 exit
 :WIPE
+del "..\*.bin*"
 cd ".\config"
 (echo 1) > hi.txt
 del "*.txt*"
@@ -181,6 +182,11 @@ IF EXIST .\config\6.txt (
     cd ".."
     (echo videoSupport=1) > z-cfg-cur.txt
     (echo videoSupport=0) > z-cfg-new.txt
+    del "..\*.bin*"
+    copy "..\eboots\standalone.bin" ".."
+    cd ..
+    ren standalone.bin eboot.bin
+    cd .\.batch
     start def-cfg-OUT.bat
     GOTO MENU
   ) ELSE (
@@ -189,6 +195,11 @@ IF EXIST .\config\6.txt (
      cd ".."
      (echo videoSupport=0) > z-cfg-cur.txt
      (echo videoSupport=1) > z-cfg-new.txt
+     del "..\*.bin*"
+     copy "..\eboots\standalone_video.bin" ".."
+     cd ..
+     ren standalone_video.bin eboot.bin
+     cd .\.batch
      start def-cfg-OUT.bat
      GOTO MENU
   )
@@ -313,9 +324,4 @@ IF EXIST .\config\12.txt (
      GOTO MENU
   )
 
-:WIPE
-cd ".\config"
-del "*.txt*"
-cd ..
 exit
-  )

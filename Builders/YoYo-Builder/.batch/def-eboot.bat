@@ -20,6 +20,7 @@ IF %M%==1 GOTO STANDARD
 IF %M%==2 GOTO VIDEO
 IF %M%==e GOTO UPDATE
 IF %M%==E GOTO UPDATE
+
 :UPDATE
 cd .
 start update-OUT.bat

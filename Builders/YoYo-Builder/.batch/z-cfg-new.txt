@@ -1,1 +1,1 @@
-noSplash=1
+videoSupport=0
