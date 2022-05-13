@@ -3,6 +3,7 @@
 mode 50,12
 set /p defa=< .\.batch\def-vita-path.txt
 set /p appver=< .\.batch\appver.txt
+set /p template=< .\contents\template.txt
 Title YOYO-BUILDER
 ECHO                  YOYO-BUILDER
 ECHO.
@@ -37,8 +38,9 @@ IF EXIST .\contents\bub-id.txt (
 copy "..\..\*.png*" "."
 copy "..\..\input\*.apk*" "."
 @echo off
-IF EXIST ..\..\input\yyl.cfg (
+IF EXIST ..\..\input\*.cfg* (
     copy "..\..\input\*.cfg*" "."
+    ren *.cfg* yyl.cfg
     GOTO CONT
   ) ELSE (
     GOTO CONT
@@ -123,19 +125,19 @@ IF EXIST .\keys.ini (
   )
 :BUILD
 vita-mksfoex -d ATTRIBUTE2=12 -s TITLE_ID=%id% "%title%" param.sfo
-vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a game.apk=game.apk -a icon0.png=sce_sys/icon0.png -a bg.png=sce_sys/livearea/contents/bg.png -a startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a game.apk=game.apk -a icon0.png=sce_sys/icon0.png -a bg.png=sce_sys/livearea/contents/bg.png -a startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml
 GOTO CLNUP
 :BUILDCFG
 vita-mksfoex -d ATTRIBUTE2=12 -s TITLE_ID=%id% "%title%" param.sfo
-vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a game.apk=game.apk -a yyl.cfg=yyl.cfg -a icon0.png=sce_sys/icon0.png -a bg.png=sce_sys/livearea/contents/bg.png -a startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a game.apk=game.apk -a yyl.cfg=yyl.cfg -a icon0.png=sce_sys/icon0.png -a bg.png=sce_sys/livearea/contents/bg.png -a startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml
 GOTO CLNUP
 :BUILDKEYS
 vita-mksfoex -d ATTRIBUTE2=12 -s TITLE_ID=%id% "%title%" param.sfo
-vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a game.apk=game.apk -a keys.ini=keys.ini -a icon0.png=sce_sys/icon0.png -a bg.png=sce_sys/livearea/contents/bg.png -a startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a game.apk=game.apk -a keys.ini=keys.ini -a icon0.png=sce_sys/icon0.png -a bg.png=sce_sys/livearea/contents/bg.png -a startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml
 GOTO CLNUP
 :BUILDKEYSCFG
 vita-mksfoex -d ATTRIBUTE2=12 -s TITLE_ID=%id% "%title%" param.sfo
-vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a game.apk=game.apk -a yyl.cfg=yyl.cfg  -a keys.ini=keys.ini -a icon0.png=sce_sys/icon0.png -a bg.png=sce_sys/livearea/contents/bg.png -a startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a game.apk=game.apk -a yyl.cfg=yyl.cfg  -a keys.ini=keys.ini -a icon0.png=sce_sys/icon0.png -a bg.png=sce_sys/livearea/contents/bg.png -a startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml
 :CLNUP
 @echo off
 move ".\*.vpk*" "..\..\VPK"
@@ -144,5 +146,6 @@ del "vita-mksfoex.exe"
 del "*.png*"
 del "*.apk*"
 del "*.ini*"
+del "..\..\input\*.cfg*"
 move ".\*.cfg*" "..\..\input"
 exit
