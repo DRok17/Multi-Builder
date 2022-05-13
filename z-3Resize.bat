@@ -2,7 +2,18 @@
 dir .\input\app-folder /a:d /b > list.txt
 set /p id=< .\list.txt
 
-call scale.bat -source bg.png -target bg1.png -max-height 540 -max-width 960 -keep-ratio no -force yes
+:: Fixes image distortion
+ren bg.png bg1.png
+ren icon0.png icon01.png
+ren startup.png startup1.png
+convert bg1.png -gravity center -crop 15:9 +repage bg.png
+convert icon01.png -gravity center -crop 1:1 +repage icon0.png
+convert startup1.png -gravity center -crop 16:9 +repage startup.png
+del bg1.png
+del icon01.png
+del startup1.png
+
+call scale.bat -source bg.png -target bg1.png -max-height 540 -max-width 900 -keep-ratio no -force yes
 call scale.bat -source icon0.png -target icon01.png -max-height 128 -max-width 128 -keep-ratio no -force yes
 call scale.bat -source startup.png -target startup1.png -max-height 158 -max-width 280 -keep-ratio no -force yes
 call scale.bat -source pic0.png -target pic01.png -max-height 544 -max-width 960 -keep-ratio no -force yes

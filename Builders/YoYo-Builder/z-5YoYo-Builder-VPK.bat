@@ -96,8 +96,9 @@ IF EXIST .\eboots\standalone_video.bin (
 @echo off
 :KEYSCHK
 @echo off
-IF EXIST ..\..\input\keys.ini (
+IF EXIST ..\..\input\*.ini* (
     copy "..\..\input\*.ini*" "."
+    ren *.ini* keys.ini
     GOTO KEYCFGCHK
   ) ELSE (
     GOTO CFGCHK
