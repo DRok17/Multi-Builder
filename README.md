@@ -58,7 +58,7 @@ Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input f
 </p>
 
 <!-- Aligns table to center -->
-<img align="left" width="210" height="100" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+<img align="left" width="225 height="100" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
 
 | Roms Files  | Image Files | Other Files |
 | :---: | :---: | :---: |
