@@ -16,7 +16,9 @@ Multi-Builder combines RetroBuilder, FAKE08-Builder, ScummVM-Builder, Bubble-Bui
 Simply follow these steps:
 1) Download the required images/files (Supported formats: jpg, jpeg, bmp, png, jfif, tiff, apk, and cfg)
 2) Place them into the Input folder
-3) Name as: bg, icon0, and startup (pic0 for Bubble-Builder only; apk file be left as is for YoYo-Builder)
+3) Name images as: bg, icon0, and startup
+   - pic0 for Bubble-Builder only
+   - YoYo-Builder uses .apk, .ini and/or .cfg files. NONE need to be renamed
 4) Launch the Builder of choice from the Menu
 5) Select Simple VPK
 6) Name and add Title ID to the game of your choice
@@ -76,7 +78,6 @@ Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input f
 | .n64  |   |
 | .v64  |   |
 | .z64  |   |
-| test  |   |
 
 
 <!-- <p align="center">
@@ -91,9 +92,9 @@ For the best results, please use the Photos App (standard Windows app) to crop i
 
 #### icon0 = Square
 
-# Retro-Builder
+# RetroBuilder
 
-Retro-Builder allows anyone to create Retroarch and DaedalusX64 Bubbles easy.
+RetroBuilder allows anyone to create Retroarch and DaedalusX64 Bubbles easy.
 
 Just place any supported ROM file and three required images into the Input folder.
 
@@ -126,46 +127,67 @@ Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, dow
 
 #### ** RETROBUILDER **
 
-SayianPrinceVegeta: Providing the inspiration for all of this and helping shape Simple VPK.
+[SayianPrinceVegeta](https://www.youtube.com/channel/UCjnHt3Hiz7DUzXGwCHY3EWA) - Providing the inspiration for all of this and helping shape Simple VPK.
 
-u/W00lfwang for detailing the RetroArch Bubble Booter method.
+[u/W00lfwang](https://www.reddit.com/user/W00lfwang) - Detailing the RetroArch Bubble Booter method.
 
-u/histefanhere for the alternate RetroArch Bubble Booter method using python.
+[u/histefanhere](https://www.reddit.com/u/histefanhere/)- RetroArch Bubble Booter method using python.
 
-Rinnegatamante for porting DaedalusX64 and providing a method to create those Bubbles and everything else he does.https://github.com/Rinnegatamante/yoyoloader_vita
+[Rinnegatamante](https://github.com/Rinnegatamante/DaedalusX64-vitaGL) - Porting DaedalusX64 and providing a method to create those Bubbles and everything else he does.
+
+<!-- Spacer -->
+<p align="center">
+  <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+</p>
 
 
 #### ** FAKE08-BUILDER **
 
-jtothebell: Creator of Fake-08 - https://github.com/jtothebell/fake-08
+[jtothebell](https://github.com/jtothebell/fake-08) - Creator of Fake-08
 
-Lexaloffle Team: https://www.lexaloffle.com/pico-8.php
+[Lexaloffle Team](https://www.lexaloffle.com/pico-8.php) - Creators of Pico-8
 
+<!-- Spacer -->
+<p align="center">
+  <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+</p>
 
 #### ** SCUMMVM-BUILDER **
 
-ScummVM Team: https://github.com/scummvm/scummvm
+[ScummVM Team](https://github.com/scummvm/scummvm) - Creators of ScummVM
 
-cy33hc: For creating the Scummvm Bubble Booter - https://github.com/cy33hc/scummvm-bubble-booter
+[cy33hc](https://github.com/cy33hc/scummvm-bubble-booter) - For creating the ScummVM Bubble Booter
 
+<!-- Spacer -->
+<p align="center">
+  <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+</p>
 
 #### ** BUBBLE-BUILDER **
 
-TheOfficialFloW - Creator of Adrenaline
+[TheOfficialFloW](https://github.com/TheOfficialFloW) - Creator of Adrenaline
 
 leecherman - Adrenaline Bubble Booter
 
 ONElua - Adrenaline Bubble Manager
 
-ImageMagick - Providing Composite.exe
+[ImageMagick](https://imagemagick.org/index.php) - Providing Composite.exe and Convert.exe
 
-7Zip - Providing Zip2VPK tool
+[7Zip](https://www.7-zip.org/) - Providing Zip2VPK tool
 
+<!-- Spacer -->
+<p align="center">
+  <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+</p>
 
 #### ** YOYO-BUILDER **
 
-Rinnegatamante https://github.com/Rinnegatamante/yoyoloader_vita
+[Rinnegatamante](https://github.com/Rinnegatamante/yoyoloader_vita) - Creator of YoYo Loader Vita
 
+<!-- Spacer -->
+<p align="center">
+  <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+</p>
 
 Original Apps:
 
