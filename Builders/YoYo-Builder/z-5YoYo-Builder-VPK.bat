@@ -35,6 +35,14 @@ IF EXIST .\contents\bub-id.txt (
 @echo|set /p="%id%"> "contents/bub-id.txt"
 @echo|set /p="%title%"> "contents/bub-name.txt"
 @echo off
+IF NOT EXIST ..\..\startup.png (
+    copy "..\..\.batch\startup.png" "."
+    GOTO FPNG
+  ) ELSE (
+    GOTO FPNG
+  )
+:FPNG
+@echo off
 copy "..\..\*.png*" "."
 copy "..\..\input\*.apk*" "."
 @echo off

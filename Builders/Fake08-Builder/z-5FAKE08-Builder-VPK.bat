@@ -70,6 +70,14 @@ set /p path=< .\contents\file2.txt
 @echo|set /p="%defa%/%path%"> "contents/path.txt"
 @echo|set /p="%title%"> "contents/bub-name.txt"
 @echo off
+IF NOT EXIST ..\..\startup.png (
+    copy "..\..\.batch\startup.png" "."
+    GOTO FPNG
+  ) ELSE (
+    GOTO FPNG
+  )
+:FPNG
+@echo off
 copy "..\..\*.png*" "."
 copy "..\..\.batch\vita-mksfoex.exe" "."
 copy "..\..\.batch\vita-pack-vpk.exe" "."

@@ -59,6 +59,14 @@ IF EXIST .\.batch\folder.txt (
 @echo|set /p="%gid%"> "contents/game_id.txt"
 @echo|set /p="%title%"> "contents/bub-name.txt"
 @echo off
+IF NOT EXIST ..\..\startup.png (
+    copy "..\..\.batch\startup.png" "."
+    GOTO FPNG
+  ) ELSE (
+    GOTO FPNG
+  )
+:FPNG
+@echo off
 copy "..\..\*.png*" "."
 copy "..\..\.batch\vita-mksfoex.exe" "."
 copy "..\..\.batch\vita-pack-vpk.exe" "."

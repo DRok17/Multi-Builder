@@ -36,4 +36,9 @@ rmdir /S /Q "..\vpk\.trash"
 md "..\vpk\.trash"
 rmdir /S /Q "..\input\app-folder"
 md "..\input\app-folder"
+cd "../Builders/RetroBuilder/contents/1batch/"
+start /min zzz-Wipe.bat
+cd "../../../../.batch"
+cd "../Builders/YoYo-Builder/.batch/"
+start /min wipe-cfg.bat
 exit
