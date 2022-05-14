@@ -1,1 +1,1 @@
-ux0:Roms/GEN/Sonic The Hedgehog 2 (Europe) (Rev 1).sms
+ux0:Roms/NES/fake.nes

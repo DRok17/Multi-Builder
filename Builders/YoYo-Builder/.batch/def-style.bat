@@ -40,8 +40,8 @@ exit
 cd .
 (echo template-nostartup) > ../contents/template.txt
 (echo ad0) > z-style-NOW.txt
-timeout 3 >nul
-exit
+timeout 2 >nul
+GOTO MENU
 
 :CENT
 @echo off
@@ -54,7 +54,7 @@ start def-style-OUT.bat
 timeout 3 >nul
 @echo|set /p="%stynew%"> "./z-lastyle-cur.txt"
 @echo|set /p="%stynew%"> "./z-style-NOW.txt"
-exit
+GOTO MENU
 
 :CENTUP
 @echo off
@@ -67,7 +67,7 @@ start def-style-OUT.bat
 timeout 3 >nul
 @echo|set /p="%stynew%"> "./z-lastyle-cur.txt"
 @echo|set /p="%stynew%"> "./z-style-NOW.txt"
-exit
+GOTO MENU
 
 :RIGH
 @echo off
@@ -80,7 +80,7 @@ start def-style-OUT.bat
 timeout 3 >nul
 @echo|set /p="%stynew%"> "./z-lastyle-cur.txt"
 @echo|set /p="%stynew%"> "./z-style-NOW.txt"
-exit
+GOTO MENU
 
 :RIGHUP
 @echo off
@@ -93,7 +93,7 @@ start def-style-OUT.bat
 timeout 3 >nul
 @echo|set /p="%stynew%"> "./z-lastyle-cur.txt"
 @echo|set /p="%stynew%"> "./z-style-NOW.txt"
-exit
+GOTO MENU
 
 :RIGHLOW
 @echo off
@@ -106,4 +106,4 @@ start def-style-OUT.bat
 timeout 3 >nul
 @echo|set /p="%stynew%"> "./z-lastyle-cur.txt"
 @echo|set /p="%stynew%"> "./z-style-NOW.txt"
-exit
+GOTO MENU
