@@ -37,26 +37,51 @@ Default Builder - Choose which Builder to open by default.
 
 Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input folder, paths will generate automatically based on filename.
 
+<!-- MB Menu -->
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81541725/166613480-0fdd719d-3e77-4ddb-be5c-1f7b9c60f0e9.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+<!-- Files -->
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81541725/165885346-12315363-02f6-4783-9686-514231d737b7.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+<!-- Bubble -->
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81541725/165674041-970872a2-9ef0-479d-9086-df648d977c1a.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+<!-- LiveArea -->
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81541725/165679344-e85249a5-b0e7-4d43-b794-fed002c511de.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
- <p align="center">
+<img align="left" width="325" height="100" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+
+| Roms Files  | Image Files | Other Files |
+| :---: | :---: | :---: |
+| .gb  | .bmp  | .cfg  |
+| .gbc  | .jpg  | .ini | 
+| .gba  | .jpeg  | .apk | 
+| .sms  | .jfif  |
+| .gen  | .tiff  |
+| .bin  | .png  |
+| .smd  |   |
+| .gg  |   |
+| .nes  |   |
+| .smc  |   |
+| .sfc  |   |
+| .n64  |   |
+| .v64  |   |
+| .z64  |   |
+| test  |   |
+
+
+<!-- <p align="center">
   <img src="https://user-images.githubusercontent.com/81541725/124930830-a8e90580-dfcf-11eb-980b-999fe3a546bc.png?raw=true" alt="RetroBuilder"/>
 </p>
-
+-->
 
 
 For the best results, please use the Photos App (standard Windows app) to crop images BEFORE conversion.
