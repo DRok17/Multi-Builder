@@ -1,1 +1,1 @@
-ux0:Roms/NES/fake.nes
+ux0:Roms/SNES/fake.sfc

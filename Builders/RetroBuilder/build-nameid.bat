@@ -2,6 +2,7 @@
 @ECHO OFF
 mode 50,12
 set /p appver=< .\contents\1batch\appver.txt
+set /p template=< .\contents\template.txt
 Title RETROBUILDER 
 ECHO                    RETROBUILDER
 ECHO.
@@ -54,7 +55,7 @@ copy "..\..\*.png*" ".\contents\"
 copy "..\..\.batch\vita-mksfoex.exe" "."
 copy "..\..\.batch\vita-pack-vpk.exe" "."
 vita-mksfoex -s TITLE_ID=%id% "%title%" param.sfo
-vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml -a contents/core.txt=core.txt -a contents/rom.txt=rom.txt
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml -a contents/core.txt=core.txt -a contents/rom.txt=rom.txt
 GOTO CLNUP
 
 :VPKCN64
@@ -63,7 +64,7 @@ copy "..\..\*.png*" ".\contents\"
 copy "..\..\.batch\vita-mksfoex.exe" "."
 copy "..\..\.batch\vita-pack-vpk.exe" "."
 vita-mksfoex -s TITLE_ID=%id% "%title%" param.sfo
-vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml -a contents/rom.txt=args.txt
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml -a contents/rom.txt=args.txt
 GOTO CLNUP
 
 :CLNUP

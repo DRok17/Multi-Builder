@@ -2,6 +2,7 @@
 @ECHO OFF
 mode 50,12
 set /p appver=< .\contents\1batch\appver.txt
+set /p template=< .\contents\template.txt
 Title RETROBUILDER 
 ECHO                    RETROBUILDER
 ECHO.
@@ -55,7 +56,7 @@ set /p romp=< .\contents\file2.txt
 @echo|set /p="%title%"> "contents/rom-name.txt"
 @echo|set /p="%id%"> "contents/rom-id.txt
 vita-mksfoex -s TITLE_ID=%id% "%title%" param.sfo
-vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml -a contents/core.txt=core.txt -a contents/rom.txt=rom.txt
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml -a contents/core.txt=core.txt -a contents/rom.txt=rom.txt
 GOTO CLNUP
 
 :VPKCN64
@@ -73,7 +74,7 @@ set /p romp=< .\contents\file2.txt
 @echo|set /p="%title%"> "contents/rom-name.txt"
 @echo|set /p="%id%"> "contents/rom-id.txt
 vita-mksfoex -s TITLE_ID=%id% "%title%" param.sfo
-vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml -a contents/rom.txt=args.txt
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml -a contents/rom.txt=args.txt
 GOTO CLNUP
 
 :CLNUP
@@ -85,10 +86,11 @@ copy ".\contents\rom.txt" ".\contents\package"
 copy ".\contents\rom-name.txt" ".\contents\package"
 copy ".\contents\rom-id.txt" ".\contents\package"
 copy ".\contents\sys-id.txt" ".\contents\package"
-for %%i in (.\contents\*.txt*) do if not "%%i"==".\contents\core.txt" if not "%%i"==".\contents\rom.txt" if not "%%i"==".\contents\rom-id.txt" if not "%%i"==".\contents\rom-name.txt" if not "%%i"==".\contents\sys-id.txt" del /q "%%i"
+for %%i in (.\contents\*.txt*) do if not "%%i"==".\contents\template.txt" if not "%%i"==".\contents\core.txt" if not "%%i"==".\contents\rom.txt" if not "%%i"==".\contents\rom-id.txt" if not "%%i"==".\contents\rom-name.txt" if not "%%i"==".\contents\sys-id.txt" del /q "%%i"
 del "vita-pack-vpk.exe"
 del "vita-mksfoex.exe"
 del ".\contents\*.png*"
+del "..\..\*.txt*"
 cd ".\contents\1batch"
 start /min zzz-EbootInput-RA.bat
 

@@ -1,6 +1,6 @@
 @echo off
 
-for %%i in (..\*.txt*) do if not "%%i"=="..\core.txt" if not "%%i"=="..\rom.txt" if not "%%i"=="..\rom-id.txt" if not "%%i"=="..\rom-name.txt" if not "%%i"=="..\sys-id.txt" del /q "%%i"
+for %%i in (..\*.txt*) do if not "%%i"=="..\template.txt" if not "%%i"=="..\core.txt" if not "%%i"=="..\rom.txt" if not "%%i"=="..\rom-id.txt" if not "%%i"=="..\rom-name.txt" if not "%%i"=="..\sys-id.txt" del /q "%%i"
 
 cd "..\..\..\..\input"
 

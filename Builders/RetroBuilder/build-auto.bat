@@ -8,11 +8,12 @@ copy "..\..\.batch\vita-pack-vpk.exe" "."
 set /p title=< .\contents\rom-name.txt
 set /p id=< .\contents\rom-id.txt
 set /p sys=< .\contents\sys-id.txt
+set /p template=< .\contents\template.txt
 @echo|set /p="%core%"= "contents/core.txt"
 @echo|set /p="%rom%"= "contents/rom.txt"
 @echo|set /p="%sys%"= "contents/sys-id.txt"
 vita-mksfoex -s TITLE_ID=%id% "%title%" param.sfo
-vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml -a contents/core.txt=core.txt -a contents/rom.txt=rom.txt
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml -a contents/core.txt=core.txt -a contents/rom.txt=rom.txt
 GOTO CLNUP
 
 :VPKCN64
@@ -27,7 +28,7 @@ set /p sys=< .\contents\sys-id.txt
 @echo|set /p="%rom%"= "contents/rom.txt"
 @echo|set /p="%sys%"= "contents/sys-id.txt"
 vita-mksfoex -s TITLE_ID=%id% "%title%" param.sfo
-vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml -a contents/rom.txt=args.txt
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml -a contents/rom.txt=args.txt
 GOTO CLNUP
 
 :CLNUP
