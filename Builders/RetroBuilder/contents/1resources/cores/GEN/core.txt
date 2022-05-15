@@ -1,1 +1,1 @@
-app0:picodrive_libretro.self
+app0:genesis_plus_gx_libretro.self

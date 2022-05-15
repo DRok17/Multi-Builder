@@ -4,7 +4,6 @@
 mode 32,18
 set /p stycur=< .\z-lastyle-cur.txt
 set /p stynow=< .\z-style-NOW.txt
-set /p appver=< .\appver.txt
 Title YOYO-BUILDER
 ECHO           YOYO-BUILDER
 ECHO.

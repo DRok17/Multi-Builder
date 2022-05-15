@@ -3,6 +3,7 @@
 mode 50,12
 set /p defa=< .\.batch\def-vita-path.txt
 set /p appver=< .\.batch\appver.txt
+set /p template=< .\contents\template.txt
 Title SCUMMVM-BUILDER
 ECHO                  SCUMMVM-BUILDER
 ECHO.
@@ -72,7 +73,7 @@ copy "..\..\.batch\vita-mksfoex.exe" "."
 copy "..\..\.batch\vita-pack-vpk.exe" "."
 @echo off
 vita-mksfoex -s TITLE_ID=%id% "%title%" contents/param.sfo
-vita-pack-vpk -s contents/param.sfo -b contents/eboot.bin "%id%.vpk" -a icon0.png=sce_sys/icon0.png -a bg.png=sce_sys/livearea/contents/bg.png -a startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml -a contents/path.txt=path.txt -a contents/game_id.txt=game_id.txt
+vita-pack-vpk -s contents/param.sfo -b contents/eboot.bin "%id%.vpk" -a icon0.png=sce_sys/icon0.png -a bg.png=sce_sys/livearea/contents/bg.png -a startup.png=sce_sys/livearea/contents/startup.png -a contents/%template%.xml=sce_sys/livearea/contents/template.xml -a contents/path.txt=path.txt -a contents/game_id.txt=game_id.txt
 GOTO CLNUP
 
 :CLNUP

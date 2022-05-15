@@ -15,7 +15,7 @@ ECHO      3 - Wipe Input/Contents
 ECHO.
 ECHO    * Settings and Options *
 ECHO.
-ECHO      4 - Define LiveArea Style
+ECHO      4 - LiveArea Style
 ECHO.
 ECHO      V - VPK Folder
 ECHO.
