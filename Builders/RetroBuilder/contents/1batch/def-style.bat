@@ -31,22 +31,6 @@ IF %M%==4 GOTO RIGHUP
 IF %M%==5 GOTO RIGHLOW
 IF %M%==6 GOTO NONE
 
-:EOF
-exit
-
-:CENTUP
-@echo off
-cd .
-(echo template) > ../../contents/template.txt
-(echo a2) > z-lastyle-new.txt
-set /p stynew=< .\z-lastyle-new.txt
-cd .
-start def-style-OUT.bat
-timeout 3 >nul
-@echo|set /p="%stynew%"> "./z-lastyle-cur.txt"
-@echo|set /p="%stynew%"> "./z-style-NOW.txt"
-GOTO MENU
-
 :NONE
 @echo off
 cd .
@@ -68,7 +52,18 @@ timeout 3 >nul
 @echo|set /p="%stynew%"> "./z-style-NOW.txt"
 GOTO MENU
 
-
+:CENTUP
+@echo off
+cd .
+(echo template) > ../../contents/template.txt
+(echo a2) > z-lastyle-new.txt
+set /p stynew=< .\z-lastyle-new.txt
+cd .
+start def-style-OUT.bat
+timeout 3 >nul
+@echo|set /p="%stynew%"> "./z-lastyle-cur.txt"
+@echo|set /p="%stynew%"> "./z-style-NOW.txt"
+GOTO MENU
 
 :RIGH
 @echo off
@@ -108,3 +103,6 @@ timeout 3 >nul
 @echo|set /p="%stynew%"> "./z-lastyle-cur.txt"
 @echo|set /p="%stynew%"> "./z-style-NOW.txt"
 GOTO MENU
+
+:EOF
+exit

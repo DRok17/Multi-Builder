@@ -46,10 +46,6 @@ IF %M%==4 GOTO RIGHUP
 IF %M%==5 GOTO RIGHLOW
 IF %M%==6 GOTO NONE
 
-:EOF
-@echo off
-del ".\list.txt"
-exit
 
 :NONE
 @echo off
@@ -189,3 +185,8 @@ copy ".\template.xml" "..\..\..\input\app-folder\%id%\sce_sys\livearea\contents\
 del ".\template.xml"
 del ".\list.txt"
 GOTO MENU
+
+:EOF
+@echo off
+del ".\list.txt"
+exit

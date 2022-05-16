@@ -31,11 +31,6 @@ IF %M%==4 GOTO RIGHUP
 IF %M%==5 GOTO RIGHLOW
 IF %M%==6 GOTO NONE
 
-:EOF
-exit
-
-
-
 :NONE
 @echo off
 cd .
@@ -108,3 +103,6 @@ timeout 3 >nul
 @echo|set /p="%stynew%"> "./z-lastyle-cur.txt"
 @echo|set /p="%stynew%"> "./z-style-NOW.txt"
 GOTO MENU
+
+:EOF
+exit
