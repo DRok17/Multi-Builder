@@ -22,7 +22,7 @@ Multi-Builder is a PS Vita LiveArea bubble creation and editing tool for Windows
 3) Name images as: bg, icon0, and startup
    - Aspect ratio for images: bg = 15:9, startup/pic0 = 16:9, icon0 = 1:1
    - pic0 for Bubble-Builder only
-   - YoYo-Builder uses .apk, .ini and/or .cfg files. NONE need to be renamed
+   - YoYo-Builder uses .apk, .ini and/or .cfg files. NONE need to be renamed as of 1.5 and up.
 4) Launch the Builder of choice from the Menu
 5) Select Simple VPK
 6) Name and add Title ID to the game of your choice
