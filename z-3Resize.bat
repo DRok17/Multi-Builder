@@ -6,12 +6,15 @@ set /p id=< .\list.txt
 ren bg.png bg1.png
 ren icon0.png icon01.png
 ren startup.png startup1.png
+ren pic0.png pic01.png
 convert bg1.png -gravity center -crop 15:9 +repage bg.png
 convert icon01.png -gravity center -crop 1:1 +repage icon0.png
 convert startup1.png -gravity center -crop 16:9 +repage startup.png
+convert pic01.png -gravity center -crop 16:9 +repage pic0.png
 del bg1.png
 del icon01.png
 del startup1.png
+del pic01.png
 
 call scale.bat -source bg.png -target bg1.png -max-height 540 -max-width 900 -keep-ratio no -force yes
 call scale.bat -source icon0.png -target icon01.png -max-height 128 -max-width 128 -keep-ratio no -force yes

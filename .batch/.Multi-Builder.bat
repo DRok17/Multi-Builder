@@ -7,14 +7,14 @@ ECHO                      MULTI-BUILDER
 ECHO.                         
 ECHO .......................................................
 ECHO.
-ECHO        * Builders *             * Image Tools *
+ECHO         * Builders *             * Image Tools *
 ECHO.
 ECHO     1 - RetroBuilder         11 - Input Folder
 ECHO     2 - FAKE-08-Builder      22 - Image Converter
 ECHO     3 - ScummVM-Builder      33 - Converted Images
-ECHO     4 - Bubble-Builder       44 - Wipe Input/Contents
-ECHO.                  
-ECHO                    5 - YoYo-Builder         
+ECHO     4 - Homebrew and Adrenl. 44 - Wipe Input/CFG
+ECHO     5 - YoYo-Builder           
+ECHO     6 - EasyRPG-Builder                     
 ECHO.
 ECHO.
 ECHO                * Settings and Folders *
@@ -29,6 +29,7 @@ IF %M%==2 GOTO FAKE
 IF %M%==3 GOTO SCUMM
 IF %M%==4 GOTO BUBBLE
 IF %M%==5 GOTO YOYO
+IF %M%==6 GOTO EASY
 IF %M%==11 GOTO INPF
 IF %M%==22 GOTO PNG
 IF %M%==33 GOTO IMG
@@ -106,12 +107,21 @@ start zz-Bubble-Builder.bat
 GOTO EOF
 
 :YOYO
-:: 14
-:: 24
+:: 12
+:: 25
 del ".\app.txt"
 (echo YOYO-BUILDER) > ".\app.txt"
 cd "../Builders/YOYO-Builder"
 start zz-YoYo-Builder.bat
+GOTO EOF
+
+:EASY
+:: 15
+:: 24
+del ".\app.txt"
+(echo EASYRPG-BUILDER) > ".\app.txt"
+cd "../Builders/EasyRPG-Builder"
+start zz-EasyRPG-Builder.bat
 GOTO EOF
 
 :WIPE
