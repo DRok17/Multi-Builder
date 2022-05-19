@@ -12,7 +12,7 @@ ECHO.
 ECHO     1 - RetroBuilder         11 - Input Folder
 ECHO     2 - FAKE-08-Builder      22 - Image Converter
 ECHO     3 - ScummVM-Builder      33 - Converted Images
-ECHO     4 - Homebrew and Adrenl. 44 - Wipe Input/CFG
+ECHO     4 - Bubble-Builder       44 - Wipe Input/CFG
 ECHO     5 - YoYo-Builder           
 ECHO     6 - EasyRPG-Builder                     
 ECHO.

@@ -40,7 +40,7 @@ ECHO      12 - Run with Shaders Debug Mode %.12%
 ECHO.
 ECHO       W - Wipe Config File  %wipe%
 ECHO.
-ECHO.     NOTE : CHANGES WILL CLEAR ON EXIT
+ECHO.     NOTE : REMOVALS WILL SHOW ON EXIT
 ECHO.
 SET /P M=Type # or 0 for EXIT :
 IF %M%==0 GOTO EOF
