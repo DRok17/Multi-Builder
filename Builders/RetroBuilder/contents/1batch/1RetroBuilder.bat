@@ -515,17 +515,17 @@ GOTO ADOP
 
 :WIPE
 cd .
-start zzz-Wipe.bat
+start /min zzz-Wipe.bat
 cd "../../../../.batch"
-start zzz-Wipe.bat
+start /min zzz-Wipe.bat
 cd "../Builders/RetroBuilder/contents/1batch"
 GOTO MENU
 
 :WIPE2
 cd .
-start zzz-Wipe.bat
+start /min zzz-Wipe.bat
 cd "../../../../.batch"
-start zzz-Wipe.bat
+start /min zzz-Wipe.bat
 cd "../Builders/RetroBuilder/contents/1batch"
 GOTO ADOP
 

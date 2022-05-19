@@ -45,7 +45,7 @@ GOTO CheckForFile
 cd ..
 copy "..\..\icon0.png" ".\build\sce_sys\"
 copy "..\..\bg.png" ".\build\sce_sys\livearea\contents\"
-copy "..\..\startup.png" ".\build\sce_sys\livearea\contents\"
+copy ".\startup.png" ".\build\sce_sys\livearea\contents\"
 copy "..\Bubble-Builder\7z.exe" "."
 copy "..\Bubble-Builder\7z.dll" "."
 exit

@@ -82,9 +82,9 @@ GOTO MENU
 
 :WIPE
 cd .
-start zzz-Wipe.bat
+start /min zzz-Wipe.bat
 cd "../../../.batch"
-start zzz-Wipe.bat
+start /min zzz-Wipe.bat
 cd "../Builders/ScummVM-Builder/.batch"
 GOTO MENU
 

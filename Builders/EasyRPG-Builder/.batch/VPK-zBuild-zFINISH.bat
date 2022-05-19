@@ -15,7 +15,7 @@ ECHO.
 ECHO.
 ECHO.
 ECHO.
-timeout 4 >nul
+timeout 3 >nul
 del ".\VPK-Done.txt"
 del ".\Asset-Prep.txt"
 GOTO EOF
