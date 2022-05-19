@@ -8,8 +8,10 @@ Multi-Builder is a PS Vita LiveArea bubble creation and editing tool for Windows
 - FAKE08
 - ScummVM
 - YoYo Loader Vita
-- Homebrew
-- Adrenaline Bubble Booter or Adrenaline Bubble Manager
+- EasyRPG Player Vita
+- Homebrew (editing only)
+- Adrenaline Bubble Booter or Adrenaline Bubble Manager (editing only)
+
 
 <!-- Spacer -->
 <p align="center">
@@ -179,6 +181,14 @@ Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, dow
   <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
 </p>
 
+# EasyRPG-Builder
+![image](https://user-images.githubusercontent.com/81541725/169355312-161a10a5-08a3-42cb-8073-0e3a26849b79.png)
+
+<!-- Spacer -->
+<p align="center">
+  <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+</p>
+
 
 ## Shoutouts:
 
@@ -240,6 +250,18 @@ ONElua - Adrenaline Bubble Manager
 #### ** YOYO-BUILDER **
 
 [Rinnegatamante](https://github.com/Rinnegatamante/yoyoloader_vita) - Creator of YoYo Loader Vita
+
+<!-- Spacer -->
+<p align="center">
+  <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+</p>
+
+#### ** EASYRPG-BUILDER **
+
+[EasyRPG](https://github.com/EasyRPG/Player) - Creator of EasyRPG Player
+
+[Rinnegatamante](https://github.com/Rinnegatamante/easyrpg-player-vita) - Creator of EasyRPG Player Vita
+
 
 <!-- Spacer -->
 <p align="center">
