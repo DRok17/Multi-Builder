@@ -183,6 +183,8 @@ Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, dow
 
 # EasyRPG-Builder
 ![image](https://user-images.githubusercontent.com/81541725/169355312-161a10a5-08a3-42cb-8073-0e3a26849b79.png)
+![image](https://user-images.githubusercontent.com/81541725/169358236-4265b176-39b3-4d0d-a288-ff0cedf09b75.png)
+
 
 <!-- Spacer -->
 <p align="center">
