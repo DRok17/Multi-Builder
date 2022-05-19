@@ -1,5 +1,13 @@
 @echo off
 set /p app=< .\app.txt
+IF EXIST .\Asset-Prep.txt (
+    cd .
+    start VPK-Prep-zAlreadySTART.bat
+    GOTO EOF
+  ) ELSE (
+    GOTO NEXT
+  )
+:NEXT
 cd "../../../input"
 IF EXIST *.png (
     GOTO PNG
@@ -47,3 +55,6 @@ timeout 18 >nul
 @echo off
 cd "../Builders/%app%/"
 start z-5%app%-VPK.bat
+
+:EOF
+exit

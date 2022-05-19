@@ -126,7 +126,7 @@ GOTO EOF
 
 :WIPE
 cd .
-start zzz-Wipe.bat
+start /min zzz-Wipe.bat
 GOTO MENU
 
 :EOF

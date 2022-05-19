@@ -4,8 +4,9 @@
 mode 32,18
 set /p stycur=< .\z-lastyle-cur.txt
 set /p stynow=< .\z-style-NOW.txt
-Title SCUMMVM-BUILDER
-ECHO          SCUMMVM-BUILDER
+set /p app=< .\app.txt
+Title %app%
+ECHO          %app%
 ECHO.
 ECHO ................................
 ECHO.
