@@ -47,7 +47,7 @@ Multi-Builder is a PS Vita LiveArea bubble creation and editing tool for Windows
 | .gbc  | .jpg  | .ini | 
 | .gba  | .jpeg  | .apk | 
 | .sms  | .jfif  | RPG Maker 00/03 | 
-| .gen  | .tiff  |
+| .gen  | .tiff  | EasyRPG | 
 | .bin  | .png  |
 | .smd  |   |
 | .gg  |   |
@@ -150,6 +150,9 @@ Fake-08-Builder is a tool for Windows 10 that creates LiveArea Bubbles for Pico-
 
 
 # ScummVM-Builder
+
+ScummVM-Builder is a Windows 10 tool that creates custom LiveArea Bubbles for compatible PC games running on the ScummVM app for the PS Vita.
+
 ![image](https://user-images.githubusercontent.com/81541725/169360893-151d2a62-ebdc-4a67-97c3-64f30b95507a.png)
 ![image](https://user-images.githubusercontent.com/81541725/169361136-4b9bae11-c46b-493d-97ac-346947f0949d.png)
 
@@ -160,7 +163,8 @@ Fake-08-Builder is a tool for Windows 10 that creates LiveArea Bubbles for Pico-
 
 
 # Bubble-Builder
-Bubble-Builder is a total VPK re-packaging tool for Homebrew and Adrenaline Bubble Booter assets. PNGs, Title and IDs can now all be modified with ease on WIndows 10 PCs.
+
+Bubble-Builder is a total VPK re-packaging tool for Homebrew and Adrenaline Bubble Booter assets. PNGs, Title and IDs can now all be modified with ease on Windows 10/11.
 
 Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, download the required images to Input folder, and title/ID as needed (if VPK requires additional ux0:data folder, please select Y when prompted, otherwise select N). New VPK can then be generated and installed on the Vita.
 
@@ -173,6 +177,9 @@ Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, dow
 </p>
 
 # YoYo-Builder
+
+YoYo-Builder is a custom bubbles tool for Game Maker Studios games that are compatible with Yo-Yo Loader Vita.
+
 ![image](https://user-images.githubusercontent.com/81541725/165887109-2a210ef8-6d7e-47fb-88e3-877b65e88541.png)
 ![image](https://user-images.githubusercontent.com/81541725/169362622-6769874f-87e9-4132-a5d1-aadcebf09545.png)
 
@@ -182,6 +189,9 @@ Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, dow
 </p>
 
 # EasyRPG-Builder
+
+EasyRPG-Builder is a custom bubbles tool that allows RPG Maker 2000/2003 and EasyRPG games to be played on PS Vita using EasyRPG Player Vita.
+
 ![image](https://user-images.githubusercontent.com/81541725/169355312-161a10a5-08a3-42cb-8073-0e3a26849b79.png)
 ![image](https://user-images.githubusercontent.com/81541725/169358236-4265b176-39b3-4d0d-a288-ff0cedf09b75.png)
 
@@ -194,6 +204,12 @@ Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, dow
 
 ## Shoutouts:
 
+#### ** GENERAL SHOUTOUTS **
+
+Devon - Thanks to friends for all his help and listening to my ranting when something isn't working...until it does.
+
+[dbenham](https://www.dostips.com/forum/viewtopic.php?f=3&t=6044) - Creating the JREPL batch file that allows template swapping, used in every builder.
+
 #### ** RETROBUILDER **
 
 [SayianPrinceVegeta](https://www.youtube.com/channel/UCjnHt3Hiz7DUzXGwCHY3EWA) - Providing the inspiration for all of this and helping shape Simple VPK.
@@ -203,8 +219,6 @@ Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, dow
 [u/histefanhere](https://www.reddit.com/u/histefanhere/)- RetroArch Bubble Booter method using python.
 
 [Rinnegatamante](https://github.com/Rinnegatamante/DaedalusX64-vitaGL) - Porting DaedalusX64 and providing a method to create those Bubbles and everything else he does.
-
-[dbenham](https://www.dostips.com/forum/viewtopic.php?f=3&t=6044) - Creating the JREPL batch file that allows template swapping, used in every builder.
 
 <!-- Spacer -->
 <p align="center">
