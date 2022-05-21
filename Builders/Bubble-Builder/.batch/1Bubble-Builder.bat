@@ -46,7 +46,7 @@ GOTO MENU
 :VPKF
 cd "../../../.batch"
 start OpenVPKFolderOUT.bat
-cd "../Builders/Bubble-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :DEFSTY
@@ -67,13 +67,13 @@ GOTO MENU
 :INPF
 cd "../../../.batch"
 start OpenInputFolderOUT.bat
-cd "../Builders/Bubble-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :PNG
 cd "../../../.batch"
 start PNGConvertOUT.bat
-cd "../Builders/Bubble-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :PACKVPK
@@ -91,7 +91,7 @@ cd .
 start zzz-Wipe.bat
 cd "../../../.batch"
 start zzz-Wipe.bat
-cd "../Builders/Bubble-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :EOF

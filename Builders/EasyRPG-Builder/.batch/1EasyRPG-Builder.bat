@@ -1,6 +1,6 @@
 :MENU
 @ECHO OFF
-::   v - WIDTH minus app.txt divided by 2 plus 6
+:: WIDTH minus app.txt divided by 2 plus 6
 mode 34,17
 set /p appver=< .\appver.txt
 set /p app=< .\app.txt
@@ -46,25 +46,19 @@ GOTO MENU
 :INPF
 cd "../../../.batch"
 start OpenInputFolderOUT.bat
-cd "../Builders/%app%/.batch"
+cd %~dp0
 GOTO MENU
 
 :VPKF
 cd "../../../.batch"
 start OpenVPKFolderOUT.bat
-cd "../Builders/%app%/.batch"
+cd %~dp0
 GOTO MENU
 
 :PNG
 cd "../../../.batch"
 start PNGConvertOUT.bat
-cd "../Builders/%app%/.batch"
-GOTO MENU
-
-:PACKVPK
-cd ..
-start z-5%app%-VPK.bat
-cd "./.batch"
+cd %~dp0
 GOTO MENU
 
 :EVPK
@@ -77,7 +71,7 @@ cd .
 start /min zzz-Wipe.bat
 cd "../../../.batch"
 start /min zzz-Wipe.bat
-cd "../Builders/%app%/.batch"
+cd %~dp0
 GOTO MENU
 
 :RESTART

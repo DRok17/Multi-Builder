@@ -63,7 +63,7 @@ GOTO MENU
 :INPF
 cd "../../../../.batch"
 start OpenInputFolderOUT.bat
-cd "../Builders/RetroBuilder/contents/1batch"
+cd %~dp0
 GOTO MENU
 
 
@@ -399,7 +399,7 @@ GOTO ADOP
 :INPF2
 cd "../../../../.batch"
 start OpenInputFolderOUT.bat
-cd "../Builders/RetroBuilder/contents/1batch"
+cd %~dp0
 GOTO ADOP
 
 :APPVNID
@@ -480,7 +480,7 @@ GOTO ADOP
 :PNG
 cd "../../../../.batch"
 start PNGConvertOUT.bat
-cd "../Builders/RetroBuilder/contents/1batch"
+cd %~dp0
 GOTO ADOP
 
 :MVPK
@@ -518,7 +518,7 @@ cd .
 start /min zzz-Wipe.bat
 cd "../../../../.batch"
 start /min zzz-Wipe.bat
-cd "../Builders/RetroBuilder/contents/1batch"
+cd %~dp0
 GOTO MENU
 
 :WIPE2
@@ -526,7 +526,7 @@ cd .
 start /min zzz-Wipe.bat
 cd "../../../../.batch"
 start /min zzz-Wipe.bat
-cd "../Builders/RetroBuilder/contents/1batch"
+cd %~dp0
 GOTO ADOP
 
 :SAMP

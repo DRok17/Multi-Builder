@@ -46,7 +46,7 @@ GOTO MENU
 :VPKF
 cd "../../../.batch"
 start OpenVPKFolderOUT.bat
-cd "../Builders/Fake08-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :MULTI
@@ -67,19 +67,19 @@ GOTO MENU
 :INPF
 cd "../../../.batch"
 start OpenInputFolderOUT.bat
-cd "../Builders/Fake08-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :PNG
 cd "../../../.batch"
 start PNGConvertOUT.bat
-cd "../Builders/Fake08-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :PACKVPK
 cd ..
 start z-5FAKE08-Builder-VPK.bat
-cd "./.batch"
+cd %~dp0
 GOTO MENU
 
 :EVPK
@@ -92,7 +92,7 @@ cd .
 start /min zzz-Wipe.bat
 cd "../../../.batch"
 start /min zzz-Wipe.bat
-cd "../Builders/Fake08-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :EOF

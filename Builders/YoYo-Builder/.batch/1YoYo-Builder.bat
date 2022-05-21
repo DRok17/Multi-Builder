@@ -66,25 +66,25 @@ GOTO MENU
 :INPF
 cd "../../../.batch"
 start OpenInputFolderOUT.bat
-cd "../Builders/YOYO-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :VPKF
 cd "../../../.batch"
 start OpenVPKFolderOUT.bat
-cd "../Builders/YOYO-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :PNG
 cd "../../../.batch"
 start PNGConvertOUT.bat
-cd "../Builders/YOYO-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :PACKVPK
 cd ..
 start z-5YoYo-Builder-VPK.bat
-cd "./.batch"
+cd %~dp0
 GOTO MENU
 
 :EVPK
@@ -97,7 +97,7 @@ cd .
 start /min zzz-Wipe.bat
 cd "../../../.batch"
 start /min zzz-Wipe.bat
-cd "../Builders/YOYO-Builder/.batch"
+cd %~dp0
 GOTO MENU
 
 :EOF
