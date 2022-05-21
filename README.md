@@ -210,6 +210,11 @@ Devon - Thanks to friends for all his help and listening to my ranting when some
 
 [dbenham](https://www.dostips.com/forum/viewtopic.php?f=3&t=6044) - Creating the JREPL batch file that allows template swapping, used in every builder.
 
+<!-- Spacer -->
+<p align="center">
+  <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+</p>
+
 #### ** RETROBUILDER **
 
 [SayianPrinceVegeta](https://www.youtube.com/channel/UCjnHt3Hiz7DUzXGwCHY3EWA) - Providing the inspiration for all of this and helping shape Simple VPK.
