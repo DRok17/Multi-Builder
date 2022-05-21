@@ -204,6 +204,8 @@ Simply copy the Vita App of choice from ux0:app/ folder to Input/app-folder, dow
 
 [Rinnegatamante](https://github.com/Rinnegatamante/DaedalusX64-vitaGL) - Porting DaedalusX64 and providing a method to create those Bubbles and everything else he does.
 
+[dbenham](https://www.dostips.com/forum/viewtopic.php?f=3&t=6044) - Creating the JREPL batch file that allows template swapping, used in every builder.
+
 <!-- Spacer -->
 <p align="center">
   <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
