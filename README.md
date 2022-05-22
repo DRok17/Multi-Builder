@@ -206,7 +206,7 @@ EasyRPG-Builder is a custom bubbles tool that allows RPG Maker 2000/2003 and Eas
 
 #### ** GENERAL SHOUTOUTS **
 
-Devon - Thanks to friends for all his help and listening to my ranting when something isn't working...until it does.
+Devon - Thanks for all his help and listening to my ranting when something isn't working...until it does.
 
 [dbenham](https://www.dostips.com/forum/viewtopic.php?f=3&t=6044) - Creating the JREPL batch file that allows template swapping, used in every builder.
 
