@@ -96,6 +96,22 @@ cd "../Builders/YOYO-Builder"
 start zz-YoYo-Builder.bat
 GOTO EOF
 
+:EASY
+:: 14
+del ".\app.txt"
+(echo EASYRPG-BUILDER) > ".\app.txt"
+cd "../Builders/EASYRPG-Builder"
+start zz-EasyRPG-Builder.bat
+GOTO EOF
+
+:FLY
+:: 14
+del ".\app.txt"
+(echo FLYCAST-BUILDER) > ".\app.txt"
+cd "../Builders/Flycast-Builder"
+start zz-Flycast-Builder.bat
+GOTO EOF
+
 :MULTI
 start .Multi-Builder.bat
 

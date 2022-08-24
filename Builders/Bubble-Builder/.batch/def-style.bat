@@ -46,6 +46,17 @@ IF %M%==4 GOTO RIGHUP
 IF %M%==5 GOTO RIGHLOW
 IF %M%==6 GOTO NONE
 
+:CENT
+@echo off
+cd .
+IF EXIST .\template-old.xml (
+    ren template-old.xml template.xml
+    del "..\..\..\input\app-folder\%id%\sce_sys\livearea\contents\template.xml"
+    copy ".\template.xml" "..\..\..\input\app-folder\%id%\sce_sys\livearea\contents\"
+    GOTO NEXTCENT
+  ) ELSE (
+    GOTO NEXTCENT
+  )
 
 :NONE
 @echo off

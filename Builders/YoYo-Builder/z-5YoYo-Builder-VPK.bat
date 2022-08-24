@@ -69,10 +69,10 @@ IF EXIST .\eboot.bin (
   )
 :EBOOTSEL
 @ECHO OFF
-mode 33,10
+mode 33,12
 set /p appver=< .\txt\appver.txt
-Title YO YO BUILDER %appver%
-ECHO        YO YO BUILDER %appver%
+Title YOYO-BUILDER
+ECHO            YOYO-BUILDER
 ECHO.
 ECHO .................................
 ECHO.
@@ -81,10 +81,21 @@ ECHO.
 ECHO      1 - Standalone.bin
 ECHO      2 - Standalone_video.bin
 ECHO.
+ECHO      E - Update Eboots
+ECHO.
 SET /P M=Type # or 0 for EXIT :
 IF %M%==0 GOTO EOF
 IF %M%==1 GOTO STANDARD
 IF %M%==2 GOTO VIDEO
+IF %M%==e GOTO UPDATE
+IF %M%==E GOTO UPDATE
+
+:UPDATE
+cd ".\.batch"
+start update-OUT.bat
+cd ..
+GOTO EBOOTSEL
+
 :STANDARD
 @echo off
 IF EXIST .\eboots\standalone.bin (

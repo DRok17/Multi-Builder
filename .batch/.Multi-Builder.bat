@@ -1,10 +1,10 @@
 :MENU
 @ECHO OFF
-mode 55,20
+mode 55,21
 set /p appver=< .\appver.txt
 Title MULTI-BUILDER
 ECHO                      MULTI-BUILDER
-ECHO.                         
+ECHO.                        
 ECHO .......................................................
 ECHO.
 ECHO         * Builders *             * Image Tools *
@@ -14,9 +14,10 @@ ECHO     2 - FAKE-08-Builder      22 - Image Converter
 ECHO     3 - ScummVM-Builder      33 - Converted Images
 ECHO     4 - Bubble-Builder       44 - Wipe Input/CFG
 ECHO     5 - YoYo-Builder           
-ECHO     6 - EasyRPG-Builder                     
+ECHO     6 - EasyRPG-Builder     
+ECHO     7 - Flycast-Builder                    
 ECHO.
-ECHO.
+ECHO. 
 ECHO                * Settings and Folders *
 ECHO.
 ECHO                  B - Default Builder
@@ -30,6 +31,7 @@ IF %M%==3 GOTO SCUMM
 IF %M%==4 GOTO BUBBLE
 IF %M%==5 GOTO YOYO
 IF %M%==6 GOTO EASY
+IF %M%==7 GOTO FLY
 IF %M%==11 GOTO INPF
 IF %M%==22 GOTO PNG
 IF %M%==33 GOTO IMG
@@ -122,6 +124,15 @@ del ".\app.txt"
 (echo EASYRPG-BUILDER) > ".\app.txt"
 cd "../Builders/EasyRPG-Builder"
 start zz-EasyRPG-Builder.bat
+GOTO EOF
+
+:FLY
+:: 15
+:: 24
+del ".\app.txt"
+(echo FLYCAST-BUILDER) > ".\app.txt"
+cd "../Builders/Flycast-Builder"
+start zz-Flycast-Builder.bat
 GOTO EOF
 
 :WIPE

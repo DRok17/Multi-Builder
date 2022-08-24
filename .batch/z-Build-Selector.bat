@@ -1,6 +1,6 @@
 :MENU
 @ECHO OFF
-mode 32,14
+mode 32,16
 ECHO          DEFAULT BUILDER
 ECHO.
 ECHO ................................
@@ -12,7 +12,9 @@ ECHO      2 - FAKE08-Builder
 ECHO      3 - ScummVM-Builder
 ECHO      4 - Bubble-Builder
 ECHO      5 - YoYo-Builder
-ECHO      6 - Reset to Multi
+ECHO      6 - EasyRPG-Builder
+ECHO      7 - Flycast-Builder
+ECHO      8 - Reset to Multi
 ECHO.
 SET /P M=Type # or 0 for EXIT :
 IF %M%==0 GOTO EOF
@@ -21,7 +23,9 @@ IF %M%==2 GOTO FAKE
 IF %M%==3 GOTO SCUMM
 IF %M%==4 GOTO BUBBLE
 IF %M%==5 GOTO YOYO
-IF %M%==6 GOTO RESET
+IF %M%==6 GOTO EASY
+IF %M%==7 GOTO FLY
+IF %M%==8 GOTO RESET
 
 :RETRO
 del ".\defbuild.txt"
@@ -47,6 +51,17 @@ GOTO EOF
 del ".\defbuild.txt"
 (echo  YOYO) > ".\defbuild.txt"
 GOTO EOF
+
+:EASY
+del ".\defbuild.txt"
+(echo  EASY) > ".\defbuild.txt"
+GOTO EOF
+
+:FLY
+del ".\defbuild.txt"
+(echo  FLY) > ".\defbuild.txt"
+GOTO EOF
+
 
 :RESET
 del ".\defbuild.txt"
