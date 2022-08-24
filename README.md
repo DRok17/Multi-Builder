@@ -9,6 +9,7 @@ Multi-Builder is a PS Vita LiveArea bubble creation and editing tool for Windows
 - ScummVM
 - YoYo Loader Vita
 - EasyRPG Player Vita
+- Flycast Vita
 - Homebrew (editing only)
 - Adrenaline Bubble Booter or Adrenaline Bubble Manager (editing only)
 
@@ -57,6 +58,9 @@ Multi-Builder is a PS Vita LiveArea bubble creation and editing tool for Windows
 | .n64  |   |
 | .v64  |   |
 | .z64  |   |
+| .gdi  |   |
+| .cdi  |   |
+| .chd  |   |
 
 <!-- Spacer -->
 <p align="center">
@@ -66,7 +70,7 @@ Multi-Builder is a PS Vita LiveArea bubble creation and editing tool for Windows
 
 <!-- MB Menu -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/81541725/169359583-05cdcbfe-d26b-4f4d-9ff1-7bc1af7b9abc.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/81541725/186501906-8a5964f3-b2a7-49c6-8ca9-46b4379001a6.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 <!-- Files -->
@@ -101,7 +105,7 @@ Define LiveArea Style - Available for all Builders.
 
 Default Builder - Choose which Builder to open by default.
 
-Rom Autopath - RetroBuilder and FAKE08-Builder roms can be placed in the Input folder, paths will generate automatically based on filename.
+Rom Autopath - RetroBuilder, FAKE08-Builder and Flycast-Builder roms can be placed in the Input folder, paths will generate automatically based on filename.
 
 
 
@@ -201,6 +205,20 @@ EasyRPG-Builder is a custom bubbles tool that allows RPG Maker 2000/2003 and Eas
   <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
 </p>
 
+# Flycast-Builder
+
+Flycast-Builder allows anyone to create Flycast Vita Bubbles easy.
+
+Just place any supported ROM file and three required images into the Input folder.
+
+![image](https://user-images.githubusercontent.com/81541725/186502141-1bee9c80-0cc6-4f8e-ae25-4ac4cd0c2d05.png)
+
+
+<!-- Spacer -->
+<p align="center">
+  <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+</p>
+
 
 ## Shoutouts:
 
@@ -209,6 +227,8 @@ EasyRPG-Builder is a custom bubbles tool that allows RPG Maker 2000/2003 and Eas
 Devon - Thanks for all his help and listening to my ranting when something isn't working...until it does.
 
 [dbenham](https://www.dostips.com/forum/viewtopic.php?f=3&t=6044) - Creating the JREPL batch file that allows template swapping, used in every builder.
+
+Vita Nuova  Discord - Thanks for all the support, kind words and jokes :D
 
 <!-- Spacer -->
 <p align="center">
@@ -284,6 +304,18 @@ ONElua - Adrenaline Bubble Manager
 [EasyRPG](https://github.com/EasyRPG/Player) - Creator of EasyRPG Player
 
 [Rinnegatamante](https://github.com/Rinnegatamante/easyrpg-player-vita) - Creator of EasyRPG Player Vita
+
+
+<!-- Spacer -->
+<p align="center">
+  <img width="10" height="10" src="https://user-images.githubusercontent.com/81541725/168428087-611fe26a-aeb0-4617-98d7-9a239ea716d8.png">
+</p>
+
+#### ** FLYCAST-BUILDER **
+
+[Flyinghead](https://github.com/flyinghead/flycast) - Creator of Flycast
+
+[Rinnegatamante](https://github.com/Rinnegatamante/flycast-vita) - Creator of Flycast Vita
 
 
 <!-- Spacer -->
