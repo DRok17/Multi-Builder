@@ -212,6 +212,7 @@ Flycast-Builder allows anyone to create Flycast Vita Bubbles easy.
 Just place any supported ROM file and three required images into the Input folder.
 
 ![image](https://user-images.githubusercontent.com/81541725/186502141-1bee9c80-0cc6-4f8e-ae25-4ac4cd0c2d05.png)
+![image](https://user-images.githubusercontent.com/81541725/187010430-e171fe76-e8e6-428e-999d-c5b381146ba6.png)
 
 
 <!-- Spacer -->
