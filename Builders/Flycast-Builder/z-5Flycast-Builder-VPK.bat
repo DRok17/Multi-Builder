@@ -30,7 +30,7 @@ IF EXIST .\contents\bub-id.txt (
     GOTO BUBID
   )
 :BUBID
-@set /p id="Title ID (9 char MAX [CAPS or #]): "
+@set /p id="Title ID (9 characters [CAPS or #]): "
 GOTO CHKROM
 :CHKROM
 @echo off

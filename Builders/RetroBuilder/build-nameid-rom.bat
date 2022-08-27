@@ -29,7 +29,7 @@ IF EXIST .\contents\rom-id.txt (
     GOTO BUBID
   )
 :BUBID
-@set /p id="Title ID (9 char [CAPS or #]): "
+@set /p id="Title ID (9 characters [CAPS or #]): "
 @echo off
 IF EXIST .\contents\rom.txt (
     @echo off

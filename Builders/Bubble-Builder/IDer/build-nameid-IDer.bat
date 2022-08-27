@@ -28,7 +28,7 @@ IF EXIST .\txt\id.txt (
     GOTO BUBID
   )
 :BUBID
-@set /p id="Title ID (9 char MAX [CAPS or #]): "
+@set /p id="Title ID (9 characters [CAPS or #]): "
 SET /P AREYOUSURE=Does VPK Require Data Folder? (Y/[N])?
 IF /I "%AREYOUSURE%" NEQ "N" GOTO ATT2
 

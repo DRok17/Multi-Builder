@@ -30,7 +30,7 @@ IF EXIST .\contents\bub-id.txt (
     GOTO BUBID
   )
 :BUBID
-@set /p id="Title ID (9 char [CAPS or #]): "
+@set /p id="Title ID (9 characters [CAPS or #]): "
 @echo off
 @echo|set /p="%id%"> "contents/bub-id.txt"
 @echo|set /p="%title%"> "contents/bub-name.txt"

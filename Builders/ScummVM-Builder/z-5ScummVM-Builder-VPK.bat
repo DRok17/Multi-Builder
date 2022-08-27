@@ -30,7 +30,7 @@ IF EXIST .\contents\bub-id.txt (
     GOTO BUBID
   )
 :BUBID
-@set /p id="Title ID (9 char MAX [CAPS or #]): "
+@set /p id="Title ID (9 characters [CAPS or #]): "
 @echo off
 IF EXIST .\contents\game_id.txt (
     @echo off
