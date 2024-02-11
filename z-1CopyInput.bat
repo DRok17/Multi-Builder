@@ -2,6 +2,7 @@
 @echo off
 dir .\input\app-folder /a:d /b > list.txt
 set /p id=< .\list.txt
+for %%i in (.\*.png*) do del /q "%%i"
 
 
 copy ".\input\*.bmp*" "."
