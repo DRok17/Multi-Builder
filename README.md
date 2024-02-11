@@ -50,7 +50,7 @@ Multi-Builder is a PS Vita LiveArea bubble creation and editing tool for Windows
 | .sms  | .jfif  | RPG Maker 00/03 | 
 | .gen  | .tiff  | EasyRPG | 
 | .bin  | .png  |
-| .smd  |   |
+| .smd  |  .webp |
 | .gg  |   |
 | .nes  |   |
 | .smc  |   |
