@@ -91,4 +91,5 @@ del "pic0.jpeg"
 del "pic0.jfif"
 del "pic0.tiff"
 del .\list.txt
+(echo done) > ".\3done.txt"
 exit

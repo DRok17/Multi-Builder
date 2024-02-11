@@ -49,7 +49,14 @@ IF EXIST *.tiff (
 cd "../.batch"
 start PNGConvertOUT.bat
 
-timeout 18 >nul
+:5DONE
+IF EXIST "..\5done.txt" (
+    del ..\5done.txt
+    GOTO BUILD
+  ) ELSE (
+    timeout 10 >nul
+    GOTO 5DONE
+  )
 
 :BUILD
 @echo off

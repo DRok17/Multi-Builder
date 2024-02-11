@@ -19,4 +19,5 @@ ren bg-fs8.png bg.png
 ren icon0-fs8.png icon0.png
 ren startup-fs8.png startup.png
 ren pic0-fs8.png pic0.png
+(echo done) > ".\4done.txt"
 exit

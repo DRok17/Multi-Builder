@@ -52,26 +52,14 @@ ren bg1.png bg.png
 ren icon01.png icon0.png
 ren startup1.png startup.png
 ren pic01.png pic0.png
+ren *.webp *.png
+
 
 @echo off
-del "bg.bmp"
-del "bg.jpg"
-del "bg.jpeg"
-del "bg.jfif"
-del "bg.tiff"
-del "icon0.bmp"
-del "icon0.jpg"
-del "icon0.jpeg"
-del "icon0.jfif"
-del "icon0.tiff"
-del "startup.bmp"
-del "startup.jpg"
-del "startup.jpeg"
-del "startup.jfif"
-del "startup.tiff"
-del "pic0.bmp"
-del "pic0.jpg"
-del "pic0.jpeg"
-del "pic0.jfif"
-del "pic0.tiff"
+for %%i in (.\*.bmp*) do del /q "%%i"
+for %%i in (.\*.jpg*) do del /q "%%i"
+for %%i in (.\*.jpeg*) do del /q "%%i"
+for %%i in (.\*.jfif*) do del /q "%%i"
+for %%i in (.\*.tiff*) do del /q "%%i"
+(echo done) > ".\2done.txt"
 exit

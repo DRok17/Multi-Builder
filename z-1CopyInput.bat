@@ -10,6 +10,7 @@ copy ".\input\*.jpeg*" "."
 copy ".\input\*.jfif*" "."
 copy ".\input\*.tiff*" "."
 copy ".\input\*.png*" "."
+copy ".\input\*.webp*" "."
 IF EXIST .\input\app-folder\%id%\data\boot.bin (
     copy ".\.batch\psp.png" "."
     del "boot.png"
@@ -19,6 +20,6 @@ IF EXIST .\input\app-folder\%id%\data\boot.bin (
 :NEXT
 
 for %%i in (.\*.png*) do if not "%%i"==".\bg.png" if not "%%i"==".\icon0.png" if not "%%i"==".\startup.png" if not "%%i"==".\pic0.png" if not "%%i"==".\boot.png" if not "%%i"==".\psp.png" del /q "%%i"
-
+(echo done) > ".\1done.txt"
 del .\list.txt
 exit
